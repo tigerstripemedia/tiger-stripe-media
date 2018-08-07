@@ -62,7 +62,7 @@ get_header();
             <img class="profile-hayd" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/me.jpg" alt="Hayden Ingham">
           </div>
           <div class="col-lg-4 col-md-12">
-            <h3>Hayden Ingham <a class="icon-float hello-sm-icon" href="https://www.linkedin.com/in/hayden-ingham-b36085165/"><i class="fab fa-linkedin"></i></a></h3>
+            <h3>Hayden Ingham <a class="icon-float hello-sm-icon" href="https://www.linkedin.com/in/hayden-ingham-b36085165/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
             <p class="text-muted">Owner of Tiger Stripe Media</p>
             <hr class="orange-hr">
             <h4>Hi, I'm Hayden and I can help you

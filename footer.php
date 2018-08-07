@@ -50,12 +50,12 @@
   <div class="social-icons">
     <div class="container">
       <h5>Let's Get Social!</h5>
-      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.linkedin.com/in/hayden-ingham-b36085165/"><i class="fab fa-linkedin"></i></a>
-      <a class="mx-3 mt-1 icon-float sm-icon" href="https://medium.com/@tigerstripemedia"><i class="fab fa-medium-m"></i></a>
-      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.youtube.com/channel/UCZO4khvZZ3KJX_xpd34uMFw?view_as=subscriber"><i class="fab fa-youtube"></i></a>
-      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.facebook.com/tigerstripemedia/"><i class="fab fa-facebook-square"></i></a>
-      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.instagram.com/tigerstripemedia/"><i class="fab fa-instagram"></i></a>
-      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.twitter.com/tigerstripem/"><i class="fab fa-twitter"></i></a>
+      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.linkedin.com/in/hayden-ingham-b36085165/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="mx-3 mt-1 icon-float sm-icon" href="https://medium.com/@tigerstripemedia" target="_blank"><i class="fab fa-medium-m"></i></a>
+      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.youtube.com/channel/UCZO4khvZZ3KJX_xpd34uMFw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.facebook.com/tigerstripemedia/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.instagram.com/tigerstripemedia/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="mx-3 mt-1 icon-float sm-icon" href="https://www.twitter.com/tigerstripem/" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
   </div>
   <div class="copyright">
