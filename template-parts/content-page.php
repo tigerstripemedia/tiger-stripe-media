@@ -28,7 +28,7 @@
     <section id="article-title">
       <div class="container">
       	<?php the_title( '<h1>', '</h1>' ); ?>
-        <h6 class="text-muted"><time><?php the_date(); ?></time> | In <?php the_category(', '); ?> | By <?php the_author(); ?> | <?php echo do_shortcode('[rt_reading_time postfix="min read" postfix_singular="min read"]'); ?></h6>
+        <h6 class="text-muted"><time><?php the_last_modified_info(); ?></time> | In <?php the_category(', '); ?> | By <?php the_author(); ?> | <?php echo do_shortcode('[rt_reading_time postfix="min read" postfix_singular="min read"]'); ?></h6>
         <br>
         <hr class="orange-hr">
       </div>

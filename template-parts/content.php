@@ -30,7 +30,7 @@
 			?>
 			<small class="text-muted blog-post-meta">
             	<i class="fas fa-user"></i> <?php the_author(); ?><br>
-            	<i class="fas fa-calendar-alt"></i> <time><?php the_date(); ?></time><br>
+            	<i class="fas fa-calendar-alt"></i> <time><?php the_last_modified_info(); ?></time><br>
             	<i class="fas fa-folder-open"></i> <?php the_category(', '); ?><br>
             	<i class="fas fa-tags"></i> <?php the_tags(); ?><br>
             	<i class="fas fa-clock"></i> <?php echo do_shortcode('[rt_reading_time postfix="min read" postfix_singular="min read"]'); ?>
