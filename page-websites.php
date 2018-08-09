@@ -27,6 +27,12 @@ $ecom_form  = get_field('ecom_form');
     <section id="website-plans">
       <div class="container">
         
+        <div class="intro-websites">
+          <h3><?php echo $about_title; ?></h3>
+          <br>
+          <p><?php echo $about_desc; ?></p>
+        </div>
+        
         <div class="row">
           
           <!-- Bespoke Website Plan -->
