@@ -7,6 +7,8 @@
 get_header();
 
 // Custom Fields
+$about_title  = get_field('about_title');
+$about_desc  = get_field('about_desc');
 $bespoke_desc  = get_field('bespoke_desc');
 $bespoke_fts  = get_field('bespoke_fts');
 $bespoke_extras  = get_field('bespoke_extras');
