@@ -191,6 +191,8 @@ get_header();
         <?php } ?>
       </div>
     </section>
+    
+    <?php echo do_shortcode('[instagram-feed]'); ?>
 
     <!--<section id="testimonials">-->
     <!--  <div class="container">-->
