@@ -192,7 +192,7 @@ get_header();
       </div>
     </section>
     
-    <?php echo do_shortcode('[instagram-feed]'); ?>
+    <?php echo do_shortcode('[instagram-feed user="tigerstripemedia"]'); ?>
 
     <!--<section id="testimonials">-->
     <!--  <div class="container">-->
