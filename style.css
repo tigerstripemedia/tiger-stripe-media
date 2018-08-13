@@ -399,9 +399,15 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #333;
-  overscroll-behavior: none;
   position: fixed;
   overflow: hidden;
+}
+
+.main-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1, h2, h3, h4, h5, h6, p, small {
