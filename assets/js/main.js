@@ -1,4 +1,8 @@
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var x = window.matchMedia("(min-width: 992px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
+
 function myFunction(x) {
     if (x.matches) { // If media query matches
         var prevScrollpos = window.pageYOffset;
@@ -25,10 +29,6 @@ function myFunction(x) {
         }
     }
 }
-
-var x = window.matchMedia("(max-width: 991px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
 
 // For the typewriter text animation on home screen
 var TxtType = function(el, toRotate, period) {
