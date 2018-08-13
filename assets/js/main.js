@@ -1,6 +1,6 @@
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 window.addEventListener("resize", function(){
-  if (document.documentElement.clientWidth > 992) {
+  if (document.documentElement.clientWidth < 992) {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
