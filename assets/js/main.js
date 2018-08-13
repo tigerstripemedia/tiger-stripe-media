@@ -1,6 +1,6 @@
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 window.addEventListener("resize", function(){
-  if (document.documentElement.clientWidth < 992) {
+  if (document.documentElement.clientWidth > 992) {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
@@ -24,7 +24,7 @@ window.addEventListener("resize", function(){
       }
     }
   }
-});
+}, true);
 
 // For the typewriter text animation on home screen
 var TxtType = function(el, toRotate, period) {
