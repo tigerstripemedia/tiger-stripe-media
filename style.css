@@ -581,6 +581,10 @@ div.wpcf7-mail-sent-ok {
 9.3 Navbar
 --------------------------------------------------------------*/
 
+.nav-up {
+    top: -63px;
+}
+
 .bg-dark {
   background-color: #222a32!important;
   border-top: 4px solid #f79447;
