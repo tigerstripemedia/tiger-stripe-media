@@ -74,7 +74,6 @@
 
 <!-- Custom JS -->
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/assets/js/noBounce.js" type="text/javascript"></script>
 
 </body>
 </html>

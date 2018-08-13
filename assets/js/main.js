@@ -1,26 +1,30 @@
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-63px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-if( document.body.className.match('logged-in') ) { 
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("nav").style.top = "32px";
-    } else {
-      document.getElementById("nav").style.top = "-63px";
+window.addEventListener("resize", function(){
+  if (document.documentElement.clientWidth > 992) {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-63px";
+      }
+      prevScrollpos = currentScrollPos;
     }
-    prevScrollpos = currentScrollPos;
+    
+    if( document.body.className.match('logged-in') ) { 
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("nav").style.top = "32px";
+        } else {
+          document.getElementById("nav").style.top = "-63px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    }
   }
-}
+});
 
 // For the typewriter text animation on home screen
 var TxtType = function(el, toRotate, period) {
