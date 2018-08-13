@@ -1,30 +1,34 @@
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-window.addEventListener("resize", function(){
-  if (document.documentElement.clientWidth < 992) {
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("nav").style.top = "0";
-      } else {
-        document.getElementById("nav").style.top = "-63px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-    
-    if( document.body.className.match('logged-in') ) { 
-      window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("nav").style.top = "32px";
-        } else {
-          document.getElementById("nav").style.top = "-63px";
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav").style.top = "0";
+          } else {
+            document.getElementById("nav").style.top = "-63px";
+          }
+          prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
-      }
+        
+        if( document.body.className.match('logged-in') ) { 
+          window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+              document.getElementById("nav").style.top = "32px";
+            } else {
+              document.getElementById("nav").style.top = "-63px";
+            }
+            prevScrollpos = currentScrollPos;
+          }
+        }
     }
-  }
-}, false);
+}
+
+var x = window.matchMedia("(max-width: 991px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 
 // For the typewriter text animation on home screen
 var TxtType = function(el, toRotate, period) {
