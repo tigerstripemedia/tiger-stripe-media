@@ -23,9 +23,11 @@ if( document.body.className.match('logged-in') ) {
 }
 
 // Disable Mobile bounce effect
-document.ontouchmove = function(event){
-    event.preventDefault();
-}
+window.onload = function() {
+  noBounce.init({
+    animate: true,
+  });
+};
 
 // For the typewriter text animation on home screen
 var TxtType = function(el, toRotate, period) {
