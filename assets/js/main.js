@@ -24,7 +24,7 @@ window.addEventListener("resize", function(){
       }
     }
   }
-}, true);
+}, false);
 
 // For the typewriter text animation on home screen
 var TxtType = function(el, toRotate, period) {
