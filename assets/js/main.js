@@ -8,6 +8,31 @@ $(window).scroll(function() {
       if (prevScrollpos > currentScrollPos) {
         document.getElementById("nav").style.top = "0";
       } else {
+        document.getElementById("nav").style.top = "0";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    
+    if( document.body.className.match('logged-in') ) { 
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("nav").style.top = "32px";
+        } else {
+          document.getElementById("nav").style.top = "32px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    }
+  
+  }
+  else {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
         document.getElementById("nav").style.top = "-63px";
       }
       prevScrollpos = currentScrollPos;
@@ -24,7 +49,6 @@ $(window).scroll(function() {
         prevScrollpos = currentScrollPos;
       }
     }
-  
   }
 });
 
