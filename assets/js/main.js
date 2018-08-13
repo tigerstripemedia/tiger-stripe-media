@@ -1,5 +1,5 @@
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-if ($(window).scrollTop() <= 100) {
+if ($(window).scrollTop() > 100) {
       
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
