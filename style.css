@@ -1358,6 +1358,15 @@ div.wpcf7-mail-sent-ok {
   background-color: #f9fafb;
 }
 
+#article-body h1, 
+#article-body h2, 
+#article-body h3,
+#article-body h4,
+#article-body h5,
+#article-body h6 {
+  font-weight: 500;
+}
+
 #blog-body {
   padding: 50px 0;
 }
