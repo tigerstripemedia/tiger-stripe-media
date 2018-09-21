@@ -104,7 +104,7 @@ get_header();
             </a>
           </div>
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <a href="/web-hosting" class="left-underline">
+            <a href="/portal/cart.php?gid=1" class="left-underline">
               <div class="service-icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/hosting.svg" alt="">
                 <h5>Web Hosting</h5>
@@ -112,7 +112,7 @@ get_header();
             </a>
           </div>
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <a href="/domains" class="left-underline">
+            <a href="/portal" class="left-underline">
               <div class="service-icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/domains.svg" alt="">
                 <h5>Domain Names</h5>
