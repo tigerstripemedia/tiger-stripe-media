@@ -79,7 +79,7 @@ get_header();
       <div class="container">
         <h3>Services</h3>
         <div class="row">
-          <div class="col-xl-2 offset-xl-1 col-lg-3 col-md-4 col-6">
+          <div class="col-lg-3 col-md-4 col-6">
             <a href="/websites" class="left-underline">
               <div class="service-icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/websites.svg" alt="">
@@ -87,7 +87,7 @@ get_header();
               </div>
             </a>
           </div>
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+          <div class="col-lg-3 col-md-4 col-6">
             <a href="/design-print" class="left-underline">
               <div class="service-icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/design-print.svg" alt="">
@@ -95,15 +95,7 @@ get_header();
               </div>
             </a>
           </div>
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <a href="/social-media" class="left-underline">
-              <div class="service-icon">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social-media.svg" alt="">
-                <h5>Social Media</h5>
-              </div>
-            </a>
-          </div>
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+          <div class="col-lg-3 col-md-4 col-6">
             <a href="/portal/cart.php?gid=1" class="left-underline">
               <div class="service-icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/hosting.svg" alt="">
@@ -111,7 +103,7 @@ get_header();
               </div>
             </a>
           </div>
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+          <div class="col-lg-3 col-md-4 col-6">
             <a href="/portal" class="left-underline">
               <div class="service-icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/domains.svg" alt="">
