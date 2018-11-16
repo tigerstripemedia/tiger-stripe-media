@@ -402,12 +402,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, small {
-  font-weight: 300;
+  font-weight: 400;
   color: #333;
 }
 
 input, select, textarea {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .hr {
@@ -425,7 +425,7 @@ input, select, textarea {
 }
 
 .btn {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .btn-primary {
@@ -465,7 +465,7 @@ input, select, textarea {
 }
 
 .custom-form .form-group {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .custom-form .form-group br {
@@ -633,7 +633,7 @@ div.wpcf7-mail-sent-ok {
 
 .dropdown-item {
   color: rgba(255,255,255,.7);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .dropdown-item:hover {
@@ -1365,7 +1365,7 @@ div.wpcf7-mail-sent-ok {
 
 .blog-categories .dropdown-item {
   color: #333;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .blog-categories .dropdown-item:hover {
