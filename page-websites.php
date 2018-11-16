@@ -93,12 +93,12 @@ $ecom_form  = get_field('ecom_form');
           <div class="col-md-6">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/wordpress.svg" alt="">
             <hr class="hr">
-            <p>WordPress is one of the best content management systems (CMS) available. A CMS allows you to easily edit the content of your website so that you can keep it up to date and relevant to your business. Each Bespoke Website from Tiger Stripe Media comes with WordPress not only installed but customised to fit your needs.</p>
+            <p>WordPress is one of the best content management systems (CMS) available and is used by millions of website owners worldwide. A CMS allows you to easily edit the content of your website so that you can keep it up to date and relevant to your business. Each Bespoke Website from Tiger Stripe Media comes with WordPress not only installed but customised to fit your needs.</p>
           </div>
           <div class="col-md-6">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/shopify.svg" alt="">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/woo.svg" alt="">
             <hr class="hr">
-            <p>Shopify is a complete e-commerce solution which takes care of every part to selling online. I am a Shopify Partner which means I have access to the resources I need to build you a custom, professional Shopify store designed specifically for your brand. Shopify is one of the most popular and widely used e-commerce platforms with over 500,000 live stores.</p>
+            <p>WooCommerce is a complete e-commerce solution which takes care of every part to selling online. It integrates perfectly with WordPress meaning we can build you a custom, professional online store designed specifically for your brand. WooCommerce is one of the most popular and widely used e-commerce platforms and is estimated to power 42% of all online stores.</p>
           </div>
         </div>
       </div>
