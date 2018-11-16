@@ -18,7 +18,8 @@ get_header();
 
     <section id="contact">
       <div class="container">
-        <h5>To contact Hayden please enter your details below and hit send. He'll be in touch as soon as possible.</h5>
+        <h4>Have a question? We'd love to hear from you!</h4>
+        <h5>Please enter your details below and hit send - we'll be in touch as soon as possible.</h5>
         <br>
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
