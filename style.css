@@ -397,7 +397,7 @@ Standard Text: #333
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #333;
 }
 
@@ -591,6 +591,21 @@ div.wpcf7-mail-sent-ok {
   box-shadow: 0 1px 0 rgba(12,13,14,0.1), 0 1px 6px rgba(59,64,69,0.1);
   transition: top 0.3s;
 }
+
+/*#top-nav.bg-light {*/
+/*  background-color: #222a32!important;*/
+/*  border-top: 4px solid #f79447;*/
+/*}*/
+
+/*#top-nav.navbar {*/
+/*  padding: 0;*/
+/*}*/
+
+/*#top-nav .nav-link {*/
+/*  padding-top: 0.1rem;*/
+/*  padding-bottom: 0.1rem;*/
+/*  font-size: 14px;*/
+/*}*/
 
 .fixed-top {
   -webkit-transition: all 0.3s ease;
