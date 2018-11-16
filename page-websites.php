@@ -98,7 +98,7 @@ $ecom_form  = get_field('ecom_form');
           <div class="col-md-6">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/woo.svg" alt="">
             <hr class="hr">
-            <p>WooCommerce is a complete e-Commerce solution which takes care of every part to selling online. It integrates perfectly with WordPress meaning we can build you a custom, professional online store designed specifically for your brand. WooCommerce is one of the most popular and widely used e-Commerce platforms and is estimated to power 42% of all online stores.</p>
+            <p>WooCommerce is a complete e-Commerce solution which takes care of every part to selling online. It integrates perfectly with WordPress meaning we can build you a custom, professional online store that is easy to maintain and is designed specifically for your brand. WooCommerce is one of the most popular and widely used e-Commerce platforms and is estimated to power 42% of all online stores.</p>
           </div>
         </div>
       </div>
