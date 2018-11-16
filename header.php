@@ -46,18 +46,8 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tiger-stripe-media' ); ?></a>
 	
 	 <header>
-    	<!-- Top Navbar -->
-    	<!--<nav id="top-nav" class="navbar navbar-expand-lg navbar-dark bg-light">-->
-     <!--   <div class="container">-->
-     <!--     <ul class="navbar-nav ml-auto">-->
-     <!--     	<li class="nav-item">-->
-     <!--         <a class="nav-link" href="#">Register <i class="fas fa-user-circle"></i></a>-->
-     <!--       </li>-->
-     <!--     </ul>-->
-     <!--   </div>-->
-     <!-- </nav>-->
 
-	    <!-- Main Navbar -->
+	   <!-- Main Navbar -->
       <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
@@ -77,9 +67,6 @@
                     'walker'            => new WP_Bootstrap_Navwalker()
             		) );
               	?>
-              	<!--<li class="nav-item">-->-->
-               <!--   <a class="nav-link" href="#">Register <i class="fas fa-user-circle"></i></a>-->
-               <!-- </li>-->
             </ul>
           </div>
         </div>
