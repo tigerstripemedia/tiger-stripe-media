@@ -45,7 +45,7 @@
         <br>
         <h1>Coming Soon!</h1>
         <br>
-        <h5>Very soon you will be able to purchase domains and web hosting from the Tiger Stripe Media website. I am very excited about this and can't wait to launch it. If you would like to recieve an email when this feature is launched enter your email below.</h5>
+        <h5>Very soon you will be able to purchase domains and web hosting from the Tiger Stripe Media website. I am very excited about this and can't wait to launch it. If you would like to receive an email when this feature is launched enter your email below.</h5>
         <br>
         <h5>Hayden Ingham</h5>
         <h6>Owner - Tiger Stripe Media</h6>
