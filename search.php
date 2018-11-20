@@ -12,14 +12,14 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 		
-		<section id="page-header" class="search-page-header">
+		<section id="page-header">
 			<!--<div class="page-title">-->
-				<h2>
+				<h3>
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Search Results for: %s', 'tiger-stripe-media' ), '<span>' . get_search_query() . '</span>' );
 					?>
-				</h2>
+				</h3>
 			<!--</div>-->
 		</section>
 		

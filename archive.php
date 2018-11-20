@@ -15,9 +15,9 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<section id="page-header">
-		      <div class="page-title">
+		      <div class="container">
 		      	<?php
-				the_archive_title( '<h2>', '</h2>' );
+				the_archive_title( '<h3>', '</h3>' );
 				?>
 		      </div>
 		    </section>

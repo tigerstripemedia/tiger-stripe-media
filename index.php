@@ -17,8 +17,11 @@ get_header();
 
 	<section id="blog-header">
       <div class="container">
-        <div class="blog-heading">
-          <h1>BLOG</h1>
+        <div class="row">
+        	<div class="col-md-6 offset-md-3">
+	          <h1>TSM Blog</h1>
+	          <h6>Your helpful guide to everything in online business.</h6>
+        	</div>
         </div>
       </div>
     </section>

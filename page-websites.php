@@ -24,7 +24,7 @@ $ecom_form  = get_field('ecom_form');
     <section id="service-page-header">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-3">
+          <div class="col-lg-6 offset-lg-3">
             <!--<h5>Custom design to fit your brand</h5>-->
             <!--<h1>Bespoke Website Design</h1>-->
             <!--<h6>Whether you need a bespoke informational website to represent your business or an e-Commerce store with all the tools you need to sell online we’ve got you covered.</h6>-->
