@@ -28,8 +28,8 @@ $ecom_form  = get_field('ecom_form');
             <!--<h5>Custom design to fit your brand</h5>-->
             <!--<h1>Bespoke Website Design</h1>-->
             <!--<h6>Whether you need a bespoke informational website to represent your business or an e-Commerce store with all the tools you need to sell online we’ve got you covered.</h6>-->
-            <h5><?php echo $service_title; ?></h5>
-            <h1><?php echo $service_sub_title; ?></h1>
+            <h5><?php echo $service_sub_title; ?></h5>
+            <h1><?php echo $service_title; ?></h1>
             <h6><?php echo $service_desc; ?></h6>
           </div>
         </div>

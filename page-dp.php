@@ -24,8 +24,8 @@ get_header();
             <!--<h5>A range of design services</h5>-->
             <!--<h1>Design &amp; Printing</h1>-->
             <!--<h6>From digital only design to full promotional material design and printing we offer quality, professional work at a reasonable price.</h6>-->
-            <h5><?php echo $service_title; ?></h5>
-            <h1><?php echo $service_sub_title; ?></h1>
+            <h5><?php echo $service_sub_title; ?></h5>
+            <h1><?php echo $service_title; ?></h1>
             <h6><?php echo $service_desc; ?></h6>
           </div>
         </div>
