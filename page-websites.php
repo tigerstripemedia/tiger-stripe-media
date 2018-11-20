@@ -7,8 +7,9 @@
 get_header();
 
 // Custom Fields
-$about_title  = get_field('about_title');
-$about_desc  = get_field('about_desc');
+$service_title  = get_field('service_title');
+$service_sub_title  = get_field('service_sub_title');
+$service_desc  = get_field('service_desc');
 $bespoke_desc  = get_field('bespoke_desc');
 $bespoke_fts  = get_field('bespoke_fts');
 $bespoke_extras  = get_field('bespoke_extras');
@@ -20,20 +21,43 @@ $ecom_form  = get_field('ecom_form');
 
 ?>
 
-    <section id="page-header">
-      <div class="page-title">
-        <h2>Websites</h2>
+    <section id="service-page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <!--<h5>Custom design to fit your brand</h5>-->
+            <!--<h1>Bespoke Website Design</h1>-->
+            <!--<h6>Whether you need a bespoke informational website to represent your business or an e-Commerce store with all the tools you need to sell online we’ve got you covered.</h6>-->
+            <h5><?php echo $service_title; ?></h5>
+            <h1><?php echo $service_sub_title; ?></h1>
+            <h6><?php echo $service_desc; ?></h6>
+          </div>
+        </div>
       </div>
     </section>
+    
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+    <!--  <div class="container">-->
+    <!--    <a class="navbar-brand" href="#"><i class="fas fa-question-circle"></i> Have a Question?</a>-->
+      
+    <!--    <div class="collapse navbar-collapse">-->
+    <!--      <ul class="navbar-nav ml-auto">-->
+    <!--        <li class="nav-item">-->
+    <!--          <a class="nav-link mr-3" href="#">Overview</a>-->
+    <!--        </li>-->
+    <!--        <li class="nav-item">-->
+    <!--          <a class="nav-link mr-3" href="#">Website Plans</a>-->
+    <!--        </li>-->
+    <!--      </ul>-->
+    <!--    </div>-->
+        
+    <!--    <button class="btn btn-primary btn-load-right ml-auto" type="button">Get a Quote <i class="fas fa-angle-double-right"></i></button>-->
+        
+    <!--  </div>-->
+    <!--</nav>-->
 
     <section id="website-plans">
       <div class="container">
-        
-        <div class="intro-websites">
-          <h3><?php echo $about_title; ?></h3>
-          <br>
-          <p><?php echo $about_desc; ?></p>
-        </div>
         
         <div class="row">
           

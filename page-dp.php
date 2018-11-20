@@ -5,8 +5,9 @@
 */ 
 
 // Custom Fields
-$about_title  = get_field('about_title');
-$about_desc  = get_field('about_desc');
+$service_title  = get_field('service_title');
+$service_sub_title  = get_field('service_sub_title');
+$service_desc  = get_field('service_desc');
 $dp_desc  = get_field('dp_desc');
 $dp_fts  = get_field('dp_fts');
 $dp_extras  = get_field('dp_extras');
@@ -16,19 +17,23 @@ $dp_form  = get_field('dp_form');
 get_header();
 ?>
 
-    <section id="page-header">
-      <div class="page-title">
-        <h2>Design &amp; Print</h2>
+    <section id="service-page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <!--<h5>A range of design services</h5>-->
+            <!--<h1>Design &amp; Printing</h1>-->
+            <!--<h6>From digital only design to full promotional material design and printing we offer quality, professional work at a reasonable price.</h6>-->
+            <h5><?php echo $service_title; ?></h5>
+            <h1><?php echo $service_sub_title; ?></h1>
+            <h6><?php echo $service_desc; ?></h6>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="design-print">
       <div class="container">
-        <div class="intro-dp">
-          <h3><?php echo $about_title; ?></h3>
-          <br>
-          <p><?php echo $about_desc; ?></p>
-        </div>
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
             <div class="dp-plan">
