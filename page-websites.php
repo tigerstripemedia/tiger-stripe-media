@@ -21,7 +21,7 @@ $ecom_form  = get_field('ecom_form');
 
 ?>
 
-    <section id="service-page-header">
+    <section id="page-header">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
@@ -56,18 +56,20 @@ $ecom_form  = get_field('ecom_form');
     <!--  </div>-->
     <!--</nav>-->
 
-    <section id="website-plans">
+    <section id="service-plans">
       <div class="container">
+        
+        <h5 class="feature-instructions"><i class="fas fa-mouse-pointer"></i> Hover over a feature to learn more</h5>
         
         <div class="row">
           
           <!-- Bespoke Website Plan -->
           <div class="col-lg-6">
-            <div class="website-plan">
-              <div class="website-plan-icon">
+            <div class="service-plan">
+              <div class="service-plan-icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/website.svg" alt="">
               </div>
-              <div class="website-plan-content">
+              <div class="service-plan-content">
                 <h3>Bespoke Website</h3>
                 <br>
                 <p class="text-muted"><?php echo $bespoke_desc; ?></p>
@@ -78,7 +80,7 @@ $ecom_form  = get_field('ecom_form');
                 <p class="text-muted">Optional extras:</p>
                 <?php echo $bespoke_extras; ?>
               </div>
-              <div class="website-plan-footer">
+              <div class="service-plan-footer">
                 <button type="button" class="btn btn-primary btn-block btn-lg btn-load-right" data-toggle="modal" data-target="#websiteModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
             </div>
@@ -86,11 +88,11 @@ $ecom_form  = get_field('ecom_form');
 
           <!-- Shopify Store Plan -->
           <div class="col-lg-6">
-            <div class="website-plan">
-              <div class="website-plan-icon">
+            <div class="service-plan">
+              <div class="service-plan-icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/store.svg" alt="">
               </div>
-              <div class="website-plan-content">
+              <div class="service-plan-content">
                 <h3>Custom e-Commerce Store</h3>
                 <br>
                 <p class="text-muted"><?php echo $ecom_desc; ?></p>
@@ -101,7 +103,7 @@ $ecom_form  = get_field('ecom_form');
                 <p class="text-muted">Optional extras:</p>
                 <?php echo $ecom_extras; ?>
               </div>
-              <div class="website-plan-footer">
+              <div class="service-plan-footer">
                 <button type="button" class="btn btn-primary btn-block btn-lg btn-load-right" data-toggle="modal" data-target="#storeModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
           </div>

@@ -581,6 +581,157 @@ div.wpcf7-mail-sent-ok {
   display: none !important;
 }
 
+#page-header {
+  background: url('/wp-content/themes/tiger-stripe-media/assets/img/background-1.svg') no-repeat;
+  background-size: cover;
+  padding: 125px 0 50px 0;
+  text-align: center;
+}
+
+#page-header h1 {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+#page-header h5 {
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+#page-header h6 {
+  color: #f2f2f2;
+}
+
+#page-header h3 {
+  color: #fff;
+}
+
+#page-header h1.blog-title {
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#page-header h6.blog-sub-title {
+  color: #f2f2f2;
+}
+
+.navbar.navbar-light.bg-light {
+  background-color: #fbfbfb!important;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  box-shadow: 10px 0 10px rgba(0, 0, 0, .1);
+}
+
+.navbar.navbar-light.bg-light .navbar-brand {
+  color: #f79447;
+}
+
+#page-body {
+  padding: 50px 0;
+}
+
+#service-plans {
+  padding-bottom: 80px;
+  background-color: #f1f1f1;
+}
+
+#service-plans .feature-instructions {
+  color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+#service-plans .row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#service-plans .row > div[class*='col-'] {
+  display: flex;
+}
+
+.service-plan {
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.06);
+  margin-top: 150px;
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  /*transition: all .2s ease-in-out;*/
+  position: relative;
+}
+
+/*.service-plan:hover {*/
+/*  box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.08);*/
+/*  transform: scale(1.02);*/
+/*}*/
+
+.service-plan-icon {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-plan-icon img {
+  height: 179px;
+}
+
+.service-plan-content {
+  padding: 90px 30px 30px 30px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.service-plan-content a {
+  border-bottom: 1px dotted #ccc;
+  text-decoration: none;
+  color: #333;
+}
+
+.service-plan-content a:hover {
+  border-bottom: 1px dotted #333;
+  text-decoration: none;
+  color: #333;
+  cursor: default;
+}
+
+.service-plan-content a span {
+  font-size: 0.83em;
+}
+
+.service-plan-price {
+  color: #f79447;
+  /*font-weight: bold;*/
+}
+
+.service-plan-price span {
+  font-weight: normal;
+  font-size: 0.83em;
+  color: #979797;
+}
+
+.service-plan-footer {
+  padding: 30px;
+  background-color: #fbfbfb;
+  border-top: 1px solid rgba(0,0,0,.125);
+  bottom: 0;
+}
+
 /*--------------------------------------------------------------
 9.3 Navbar
 --------------------------------------------------------------*/
@@ -716,52 +867,6 @@ div.wpcf7-mail-sent-ok {
 
 .copyright small {
   color: #b7b7b7;
-}
-
-#service-page-header {
-  background: url('/wp-content/themes/tiger-stripe-media/assets/img/background-1.svg') no-repeat;
-  background-size: cover;
-  padding: 125px 0 50px 0;
-  text-align: center;
-}
-
-#service-page-header h1 {
-  font-size: 2.8rem;
-  color: #fff;
-}
-
-#service-page-header h5 {
-  text-transform: uppercase;
-  color: #f2f2f2;
-}
-
-#service-page-header h6 {
-  color: #f2f2f2;
-}
-
-#page-header {
-  background: url('/wp-content/themes/tiger-stripe-media/assets/img/background-1.svg') no-repeat;
-  background-size: cover;
-  padding: 125px 0 50px 0;
-  text-align: center;
-}
-
-#page-header h3 {
-  color: #fff;
-}
-
-.navbar.navbar-light.bg-light {
-  background-color: #fbfbfb!important;
-  border-bottom: 1px solid rgba(0,0,0,.2);
-  box-shadow: 10px 0 10px rgba(0, 0, 0, .1);
-}
-
-.navbar.navbar-light.bg-light .navbar-brand {
-  color: #f79447;
-}
-
-#page-body {
-  padding: 50px 0;
 }
 
 /*--------------------------------------------------------------
@@ -1083,80 +1188,6 @@ div.wpcf7-mail-sent-ok {
 9.7 Websites Page
 --------------------------------------------------------------*/
 
-#website-plans {
-  padding-bottom: 80px;
-  background-color: #f1f1f1;
-}
-
-.intro-websites {
-  padding-top: 80px;
-  text-align: center;
-}
-
-#website-plans .row {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-#website-plans .row > div[class*='col-'] {
-  display: flex;
-}
-
-.website-plan {
-  border: 1px solid rgba(0,0,0,.06);
-  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.06);
-  margin-top: 180px;
-  /* border-radius: 5px; */
-  text-align: center;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-}
-
-.website-plan-icon {
-  width: 252px;
-  position: absolute;
-  top: 77px;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.website-plan-content {
-  padding: 90px 30px 30px 30px;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.website-plan-content a {
-  border-bottom: 1px dotted #ccc;
-  text-decoration: none;
-  color: #333;
-}
-
-.website-plan-content a:hover {
-  border-bottom: 1px dotted #333;
-  text-decoration: none;
-  color: #333;
-}
-
-.website-plan-footer {
-  padding: 30px;
-  background-color: #fbfbfb;
-  border-top: 1px solid rgba(0,0,0,.125);
-  bottom: 0;
-}
-
 #website-brands {
   background-color: #222a32;
   padding: 30px 0;
@@ -1339,29 +1370,6 @@ div.wpcf7-mail-sent-ok {
 /*--------------------------------------------------------------
 9.10 Blog Page Page
 --------------------------------------------------------------*/
-
-#blog-header {
-  background: url('/wp-content/themes/tiger-stripe-media/assets/img/background-1.svg') no-repeat;
-  background-size: cover;
-  padding: 125px 0 50px 0;
-  text-align: center;
-}
-
-#blog-header h1 {
-  font-size: 2.8rem;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#blog-header h5 {
-  text-transform: uppercase;
-  color: #f2f2f2;
-}
-
-#blog-header h6 {
-  color: #f2f2f2;
-}
 
 #blog-nav {
   padding: 20px 0;
