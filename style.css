@@ -50,12 +50,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	9.7 Websites Page
 	9.8 Design & Print Page
 	9.9 Social Media Page
-	9.10 Blog Page
-	9.11 Blog Article Page
-	9.12 Contact Page
-	9.13 Coming Soon Page
-	9.14 404 Page
-	9.15 Media Queries
+	9.10 Web Hosting Page
+	9.11 Domains Page
+	9.12 Blog Page
+	9.13 Blog Article Page
+	9.14 Contact Page
+	9.15 Coming Soon Page
+	9.16 404 Page
+	9.17 Media Queries
 	
 --------------------------------------------------------------*/
 
@@ -390,7 +392,7 @@ Standard Text: #333
 --------------------------------------------------------------*/
 
 /* Fix the top margin when logged in */
-.logged-in .fixed-top {
+.logged-in .fixed-top, .logged-in .fixed-top-second {
 	top: 32px;
 }
 /* --- */
@@ -586,6 +588,7 @@ div.wpcf7-mail-sent-ok {
   background-size: cover;
   padding: 125px 0 50px 0;
   text-align: center;
+  height:;
 }
 
 #page-header h1 {
@@ -627,6 +630,19 @@ div.wpcf7-mail-sent-ok {
   color: #f79447;
 }
 
+.fixed-top-second {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-top: 63.22px;
+}
+
+#second-nav-placeholder {
+  height: 57px;
+}
+
 #page-body {
   padding: 50px 0;
 }
@@ -637,10 +653,15 @@ div.wpcf7-mail-sent-ok {
 }
 
 #service-plans .feature-instructions {
+  display: block;
   color: rgba(0, 0, 0, 0.2);
   text-align: center;
   text-transform: uppercase;
   padding-top: 50px;
+}
+
+#service-plans .feature-instructions-mobile {
+  display: none;
 }
 
 #service-plans .row {
@@ -714,22 +735,15 @@ div.wpcf7-mail-sent-ok {
   font-size: 0.83em;
 }
 
-.service-plan-price {
-  color: #f79447;
-  /*font-weight: bold;*/
-}
-
-.service-plan-price span {
-  font-weight: normal;
-  font-size: 0.83em;
-  color: #979797;
-}
-
 .service-plan-footer {
   padding: 30px;
   background-color: #fbfbfb;
   border-top: 1px solid rgba(0,0,0,.125);
   bottom: 0;
+}
+
+.service-plan-footer .btn-success {
+  border-radius: 100px;
 }
 
 /*--------------------------------------------------------------
@@ -1368,7 +1382,74 @@ div.wpcf7-mail-sent-ok {
 }
 
 /*--------------------------------------------------------------
-9.10 Blog Page Page
+9.10 Web Hosting Page
+--------------------------------------------------------------*/
+
+.service-plan-price {
+  color: #f79447;
+  position: relative;
+}
+
+.service-plan-price .pounds {
+  font-size: 2.3em;
+}
+
+.service-plan-price .pence {
+  font-size: 0.9em;
+  position: absolute;
+  top: 15px;
+}
+
+.service-plan-price .per-month {
+  font-size: 0.6em;
+  color: #979797;
+}
+
+
+/*--------------------------------------------------------------
+9.11 Domains Page
+--------------------------------------------------------------*/
+
+.domain-search .input-group-prepend .input-group-text {
+  border-radius: 100px 0 0 100px;
+}
+
+.domain-search-input {
+  border-radius: 0;
+  border: 0;
+}
+
+.domain-search-input::placeholder {
+  font-weight: 300;
+}
+
+.domain-search-input:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,0);
+}
+
+.domain-search .input-group-append .btn-success {
+  border-radius: 0 100px 100px 0;
+}
+
+#domain-pricing {
+  padding: 80px 0;
+  background-color: #f1f1f1;
+}
+
+#domain-pricing .table {
+  background-color: #fff!important;
+}
+
+#domain-pricing .domain-pricing-header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+
+/*--------------------------------------------------------------
+9.12 Blog Page Page
 --------------------------------------------------------------*/
 
 #blog-nav {
@@ -1491,7 +1572,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 /*--------------------------------------------------------------
-9.11 Blog Article Page
+9.13 Blog Article Page
 --------------------------------------------------------------*/
 
 .article-header-img {
@@ -1637,7 +1718,7 @@ p.logged-in-as {
 }
 
 /*--------------------------------------------------------------
-9.12 Contact Page
+9.14 Contact Page
 --------------------------------------------------------------*/
 
 #contact {
@@ -1658,7 +1739,7 @@ p.logged-in-as {
 }
 
 /*--------------------------------------------------------------
-9.13 Coming Soon Page
+9.15 Coming Soon Page
 --------------------------------------------------------------*/
 
 #coming-soon-page {
@@ -1715,7 +1796,7 @@ p.logged-in-as {
 }
 
 /*--------------------------------------------------------------
-9.14 404 Page
+9.16 404 Page
 --------------------------------------------------------------*/
 
 .error-full-page {
@@ -1740,18 +1821,18 @@ p.logged-in-as {
 }
 
 /*--------------------------------------------------------------
-9.15 Media Queries
+9.17 Media Queries
 --------------------------------------------------------------*/
 
 /* Fix the top margin when logged in */
 @media screen and (max-width: 782px) {
-  .logged-in .fixed-top {
+  .logged-in .fixed-top, .logged-in .fixed-top-second {
   	top: 46px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .logged-in .fixed-top {
+  .logged-in .fixed-top, .logged-in .fixed-top-second {
   	top: 42px;
   }
   #wpadminbar {
@@ -1797,6 +1878,19 @@ p.logged-in-as {
     right: 0;
     left: 0;
     min-width: 0;
+  }
+  
+  #service-plans .feature-instructions {
+    display: none;
+  }
+  
+  #service-plans .feature-instructions-mobile {
+    display: block;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-size: 1.1em;
   }
   
 }

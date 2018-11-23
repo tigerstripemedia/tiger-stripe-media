@@ -94,3 +94,47 @@ $('#navbar-toggler').click(function() {
 $(window).scroll(function(){
   $(".article-header-img").css("opacity", .99 - $(window).scrollTop() / 500);
 });
+
+// Smooth Scroll on click
+$(".navbar-light").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    }, 2000);
+});
+
+// Secondary Nav Fixed
+// $(document).ready(function() {
+  
+//   var headerHeight = $(".page-header").height();
+  
+//   $(window).scroll(function () {
+//       //if you hard code, then use console
+//       //.log to determine when you want the 
+//       //nav bar to stick.  
+//       console.log($(window).scrollTop())
+//     if ($(window).scrollTop() > headerHeight) {
+//       $('.navbar-light').addClass('fixed-top-second');
+//     }
+//     if ($(window).scrollTop() < headerHeight + 1) {
+//       $('.navbar-light').removeClass('fixed-top-second');
+//     }
+//   });
+
+// });
+
+
+
+window.onscroll = function fixedScroll() {secNavScroll()};
+
+var header = document.getElementById("second-nav");
+var sticky = header.offsetTop - 63.22;
+
+function secNavScroll() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("fixed-top-second");
+  } else {
+    header.classList.remove("fixed-top-second");
+  }
+}
