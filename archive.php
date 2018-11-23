@@ -31,13 +31,13 @@ get_header();
 			            <!--    <label for="search" class="sr-only">Search the Blog</label>-->
 			            <!--    <input class="form-control" type="search" id="search" placeholder="Search the blog...">-->
 			            <!--  </div>-->
-			            <!--  <button type="submit" class="btn btn-primary btn-load-right mb-2"><i class="fas fa-search"></i></button>-->
+			            <!--  <button type="submit" class="btn btn-primary mb-2"><i class="fas fa-search"></i></button>-->
 			            <!--</form>-->
 			            <?php echo get_search_form(); ?>
 			          </div>
 			          <div class="col-lg-4 offset-lg-4 blog-categories">
 			            <div class="dropdown mb-2">
-			              <button class="btn btn-primary btn-block btn-load-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			              <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			                <i class="fas fa-folder-open"></i> Categories
 			              </button>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

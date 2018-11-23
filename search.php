@@ -32,7 +32,7 @@ get_header();
 		            <!--    <label for="search" class="sr-only">Search the Blog</label>-->
 		            <!--    <input class="form-control" type="search" id="search" placeholder="Search the blog...">-->
 		            <!--  </div>-->
-		            <!--  <button type="submit" class="btn btn-primary btn-load-right mb-2"><i class="fas fa-search"></i></button>-->
+		            <!--  <button type="submit" class="btn btn-primary mb-2"><i class="fas fa-search"></i></button>-->
 		            <!--</form>-->
 		            <?php echo get_search_form(); ?>
 		          </div>

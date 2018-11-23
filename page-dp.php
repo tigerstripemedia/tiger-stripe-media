@@ -52,7 +52,7 @@ get_header();
                 <?php echo $dp_fts; ?>
               </div>
               <div class="service-plan-footer">
-                <button type="button" class="btn btn-primary btn-block btn-lg btn-load-right" data-toggle="modal" data-target="#dpModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#dpModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
             </div>
           </div>

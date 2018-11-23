@@ -163,7 +163,7 @@ get_header();
             		</div>
             	
             		<footer class="card-footer">
-            			<a href="<?php the_permalink($post->ID); ?>" class="btn btn-primary btn-block btn-load-right"><i class="fab fa-readme"></i> Read Post</a>
+            			<a href="<?php the_permalink($post->ID); ?>" class="btn btn-primary btn-block"><i class="fab fa-readme"></i> Read Post</a>
             		</footer>
             		
             	</div><!-- #post-<?php the_ID(); ?> -->

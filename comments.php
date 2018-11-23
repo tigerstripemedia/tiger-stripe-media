@@ -45,7 +45,7 @@ if ( post_password_required() ) {
 		    '<input id="url" name="url" class="form-control" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
 		    '"   /></p>',
 		    
-		    // 'comment_notes_after' => '<button type="submit" id="submit-new" class="btn btn-primary btn-load-right btn-block"><span>'.__('Post Comment').'</span></button>',
+		    // 'comment_notes_after' => '<button type="submit" id="submit-new" class="btn btn-primary btn-block"><span>'.__('Post Comment').'</span></button>',
 		);
 		
     	$comments_args = array(
@@ -56,7 +56,7 @@ if ( post_password_required() ) {
         'comment_field' =>  '<p class="comment-form-comment"><div class="form-group"><label for="comment">' . _x( 'Comment', 'noun' ) .
             '</label><textarea id="comment" name="comment" class="form-control"  rows="8" aria-required="true">' .
             '</textarea></div></p>',
-        'comment_notes_after' => '<button type="submit" id="submit-new" class="btn btn-primary btn-load-right btn-block"><span>'.__('Post Comment').'</span></button>');
+        'comment_notes_after' => '<button type="submit" id="submit-new" class="btn btn-primary btn-block"><span>'.__('Post Comment').'</span></button>');
 
 		if ( have_comments() ) :
 			?>

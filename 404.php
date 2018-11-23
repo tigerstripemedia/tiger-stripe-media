@@ -42,7 +42,7 @@
 			<div class="error-full-page">
 				<section class="error-page">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/404.svg"></img>
-					<a href="/" class="btn btn-primary btn-load-right">Go to Homepage</a>
+					<a href="/" class="btn btn-primary">Go to Homepage</a>
 				</section>
 			</div>
 		</main><!-- #main -->

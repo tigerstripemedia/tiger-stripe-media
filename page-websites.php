@@ -51,7 +51,7 @@ $ecom_form  = get_field('ecom_form');
     <!--      </ul>-->
     <!--    </div>-->
         
-    <!--    <button class="btn btn-primary btn-load-right ml-auto" type="button">Get a Quote <i class="fas fa-angle-double-right"></i></button>-->
+    <!--    <button class="btn btn-primary ml-auto" type="button">Get a Quote <i class="fas fa-angle-double-right"></i></button>-->
         
     <!--  </div>-->
     <!--</nav>-->
@@ -81,7 +81,7 @@ $ecom_form  = get_field('ecom_form');
                 <?php echo $bespoke_extras; ?>
               </div>
               <div class="service-plan-footer">
-                <button type="button" class="btn btn-primary btn-block btn-lg btn-load-right" data-toggle="modal" data-target="#websiteModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#websiteModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@ $ecom_form  = get_field('ecom_form');
                 <?php echo $ecom_extras; ?>
               </div>
               <div class="service-plan-footer">
-                <button type="button" class="btn btn-primary btn-block btn-lg btn-load-right" data-toggle="modal" data-target="#storeModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#storeModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
           </div>
         </div>
@@ -148,7 +148,7 @@ $ecom_form  = get_field('ecom_form');
         
         <h3><?php echo $question; ?></h3>
         <br>
-        <a href="<?php echo $question_btn_link; ?>" class="btn btn-lg btn-primary btn-load-right">Find out More</a>
+        <a href="<?php echo $question_btn_link; ?>" class="btn btn-lg btn-primary">Find out More</a>
         
         <?php endwhile; ?>
         
@@ -224,7 +224,7 @@ $ecom_form  = get_field('ecom_form');
             <!--      <label class="form-check-label" for="seo">Search Engine Optimisation (SEO)</label>-->
             <!--    </div>-->
             <!--  </div>-->
-            <!--  <button type="submit" class="btn btn-primary btn-load-right btn-block">Submit</button>-->
+            <!--  <button type="submit" class="btn btn-primary btn-block">Submit</button>-->
             <!--</form>-->
           </div>
         </div>

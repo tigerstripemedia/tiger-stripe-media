@@ -55,7 +55,7 @@ get_header();
                 <?php echo $kickstarter_fts; ?>
               </div>
               <div class="sm-plan-footer">
-                <button type="button" class="btn btn-primary btn-block btn-lg btn-load-right" data-toggle="modal" data-target="#kickstarterModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#kickstarterModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ get_header();
                 <?php echo $refresher_fts; ?>
               </div>
               <div class="sm-plan-footer">
-                <button type="button" class="btn btn-primary btn-block btn-lg btn-load-right" data-toggle="modal" data-target="#refresherModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#refresherModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ get_header();
                 <?php echo $consulting_fts; ?>
               </div>
               <div class="sm-plan-footer">
-                <button type="button" class="btn btn-primary btn-block btn-lg btn-load-right" data-toggle="modal" data-target="#consultingModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#consultingModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
             </div>
           </div>

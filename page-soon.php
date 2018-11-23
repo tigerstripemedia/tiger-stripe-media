@@ -56,7 +56,7 @@
             <br>
             <h5>Where Next?</h5>
             <br>
-            <a class="btn btn-primary btn-load-right btn-block" href="/"><i class="fa fa-home"></i> Head Home</a>
+            <a class="btn btn-primary btn-block" href="/"><i class="fa fa-home"></i> Head Home</a>
           </div>
         </div>
       </div>

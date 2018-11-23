@@ -289,10 +289,9 @@ add_filter( 'get_the_archive_title', function ($title) {
 // Create search form
 function wpdocs_my_search_form( $form ) {
     $form = '<form role="search" method="get" id="searchform" class="searchform custom-search-form form-inline" action="' . home_url( '/' ) . '" >
-    <div class="form-group mb-2"><label class="sr-only" for="s">' . __( 'Search for:' ) . '</label>
+    <label class="sr-only" for="s">' . __( 'Search for:' ) . '</label>
     <input class="form-control" type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Search the blog..."/>
-    </div>
-    <button type="submit" value="'. esc_attr__( 'Search' ) .'" id="searchsubmit" class="btn btn-primary btn-load-right mb-2"><i class="fas fa-search"></i></button>
+    <button type="submit" value="'. esc_attr__( 'Search' ) .'" id="searchsubmit" class="btn btn-primary"><i class="fas fa-search"></i></button>
     </form>';
  
     return $form;
