@@ -52,8 +52,6 @@
         <br>
         <div class="row">
           <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
-            <?php echo do_shortcode('[contact-form-7 id="136" title="Coming Soon Hosting and Domains" html_class="form-inline custom-form"]'); ?>
-            <br>
             <h5>Where Next?</h5>
             <br>
             <a class="btn btn-primary btn-block" href="/"><i class="fa fa-home"></i> Head Home</a>
