@@ -654,6 +654,24 @@ div.wpcf7-mail-sent-ok {
   color: #f2f2f2;
 }
 
+.table {
+  background-color: #fff!important;
+}
+
+.table th {
+  font-weight: normal;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0,0,0,.08);
+}
+
+table .false-th {
+  background-color: #f2f2f2!important;
+  border-top-color: transparent!important;
+  border-left-color: transparent!important;
+}
+
 .navbar.navbar-light.bg-light {
   background-color: #fbfbfb!important;
   border-bottom: 1px solid rgba(0,0,0,.2);
@@ -1515,6 +1533,47 @@ div.wpcf7-mail-sent-ok {
   color: #fff;
 }
 
+#full-overview {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+
+#full-overview .section-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#full-overview .section-title h6 {
+  text-transform: uppercase;
+}
+
+#full-overview table {
+  text-align: center;
+}
+
+#full-overview table img {
+  display: block;
+  margin: auto;
+  height: 100px;
+}
+
+#frequent-questions {
+  padding: 50px 0;
+}
+
+#frequent-questions .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#frequent-questions .section-title h6 {
+  text-transform: uppercase;
+}
+
+#frequent-questions a {
+  cursor: pointer;
+}
+
 
 /*--------------------------------------------------------------
 9.11 Domains Page
@@ -1541,14 +1600,6 @@ div.wpcf7-mail-sent-ok {
 #domain-pricing {
   padding: 80px 0;
   background-color: #f1f1f1;
-}
-
-#domain-pricing .table {
-  background-color: #fff!important;
-}
-
-#domain-pricing .table th {
-  font-weight: normal;
 }
 
 #domain-pricing .domain-pricing-header {

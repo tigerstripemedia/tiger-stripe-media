@@ -35,7 +35,7 @@ $ecom_form  = get_field('ecom_form');
     <section id="second-nav-placeholder">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id="second-nav">
         <div class="container">
-          <a class="navbar-brand" href="#test-section"><i class="fas fa-question-circle"></i> Have a Question?</a>
+          <a class="navbar-brand" href="#frequent-questions"><i class="fas fa-question-circle"></i> Have a Question?</a>
         
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
@@ -127,7 +127,7 @@ $ecom_form  = get_field('ecom_form');
           <div class="col-xl-3 col-lg-6 col-md-6">
             <div class="service-plan">
               <div class="service-plan-icon">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/premium.svg" alt="">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/business.svg" alt="">
               </div>
               <div class="service-plan-content">
                 <h3>Business</h3>
@@ -249,18 +249,33 @@ $ecom_form  = get_field('ecom_form');
     <!--</section>-->
     
     <section id="full-overview">
+      
       <div class="container">
+      
+        <div class="section-title">
+          <h6>View all the features of our packages</h6>
+          <h2>Full Packages Overview</h2>
+        </div>
+      
         <table class="table table-striped table-bordered table-responsive-sm">
           <thead>
             <tr>
-              <th scope="col" width= "20%"></th>
-              <th scope="col" width= "20%">Essential</th>
-              <th scope="col" width= "20%">Advanced</th>
-              <th scope="col" width= "20%">Business</th>
-              <th scope="col" width= "20%">Business Pro</th>
+              <th class="false-th" scope="col" width= "20%"></th>
+              <th scope="col" width= "20%"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/essential.svg" alt="">Essential</th>
+              <th scope="col" width= "20%"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/advanced.svg" alt="">Advanced</th>
+              <th scope="col" width= "20%"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/business.svg" alt="">Business</th>
+              <th scope="col" width= "20%"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/business-pro.svg" alt="">Business Pro</th>
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>Websites</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Unlimited</td>
+            </tr>
+            
             <tr>
               <td>Web Space</td>
               <td>10GB</td>
@@ -268,18 +283,54 @@ $ecom_form  = get_field('ecom_form');
               <td>100GB</td>
               <td>Unlimited</td>
             </tr>
-            <tr>
-              <td>.com</td>
-              <td>£14.50</td>
-              <td>£13.00</td>
-            </tr>
-            <tr>
-              <td>.net</td>
-              <td>£14.50</td>
-              <td>£13.00</td>
-            </tr>
           </tbody>
         </table>
+      </div>
+    </section>
+    
+    <section id="frequent-questions">
+      <div class="container">
+        
+        <div class="section-title">
+          <h6>Select a question from the list below</h6>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="accordion" id="accordionExample">
+          
+          <div class="card">
+            
+            <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <div class="card-header" id="headingOne">
+                <h6 class="mb-2 mt-2">FAQ Number One</h6>
+              </div>
+            </a>
+        
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="card">
+            
+            <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+              <div class="card-header" id="headingOne">
+                <h6 class="mb-2 mt-2">FAQ Number One</h6>
+              </div>
+            </a>
+        
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+            
+          </div>
+        
+        </div>
       </div>
     </section>
 

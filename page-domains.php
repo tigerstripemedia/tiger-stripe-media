@@ -62,7 +62,7 @@ get_header();
         <table class="table table-striped table-bordered table-responsive-sm">
           <thead>
             <tr>
-              <th scope="col" width= "60%"></th>
+              <th class="false-th" scope="col" width= "60%"></th>
               <th scope="col" width= "20%">Register / Renew</th>
               <th scope="col" width= "20%">Transfer</th>
             </tr>
