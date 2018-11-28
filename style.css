@@ -426,6 +426,15 @@ input, select, textarea {
     border-bottom: 0.5px solid #f79447;
 }
 
+.form-control {
+   border-radius: 3px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(247,148,73,.5);
+  border-color: #f79447;
+}
+
 .btn {
   font-weight: 400;
 }
@@ -486,15 +495,10 @@ input, select, textarea {
 
 
 
-.custom-form .form-control{
-  border-radius: 3px;
-  border: 0;
-}
-
-.custom-form .form-control:focus {
-    outline: none !important;
-    box-shadow: 0 0 10px #719ECE;
-}
+/*.custom-form .form-control{*/
+/*  border-radius: 3px;*/
+/*  border: 0;*/
+/*}*/
 
 .custom-form .form-group {
   font-weight: 400;
@@ -678,7 +682,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 #service-plans {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   background-color: #f1f1f1;
 }
 
@@ -1435,6 +1439,82 @@ div.wpcf7-mail-sent-ok {
   color: #979797;
 }
 
+#key-features {
+  padding: 50px 0;
+  background-color: #222a32;
+  text-align: center;
+}
+
+#key-features h2, #key-features h4, #key-features h5, #key-features h6, #key-features p {
+  color: #fff;
+}
+
+#key-features h6 {
+  text-transform: uppercase;
+}
+
+.kf-section-title {
+  padding-bottom: 30px;
+}
+
+#key-features img {
+  display: block;
+  margin: auto;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+#key-features .top-features div {
+  margin: 20px 0;
+}
+
+#key-features .other-features {
+  text-align: left;
+}
+
+#key-features .other-features h5 {
+  color: #fff;
+}
+
+#key-features .other-features h5 i {
+  color: #009444;
+}
+
+#our-platform {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+
+#our-platform h6 {
+  text-transform: uppercase;
+}
+
+#our-platform img {
+  display: block;
+  margin: auto;
+  max-width: 500px;
+}
+
+#hosting-management {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #222a32;
+}
+
+#hosting-management h2 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+#hosting-management h6 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#hosting-management h4, #hosting-management h5, #hosting-management p {
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 9.11 Domains Page
@@ -1447,10 +1527,6 @@ div.wpcf7-mail-sent-ok {
 .domain-search-input {
   border-radius: 0;
   border: 0;
-}
-
-.domain-search-input::placeholder {
-  font-weight: 300;
 }
 
 .domain-search-input:focus {
@@ -1469,6 +1545,10 @@ div.wpcf7-mail-sent-ok {
 
 #domain-pricing .table {
   background-color: #fff!important;
+}
+
+#domain-pricing .table th {
+  font-weight: normal;
 }
 
 #domain-pricing .domain-pricing-header {
@@ -1493,9 +1573,12 @@ div.wpcf7-mail-sent-ok {
 
 .custom-search-form input.form-control {
   width: 100%;
-  border: 1px solid #f79447;
   border-radius: 100px;
   padding-right: 42px;
+}
+
+.custom-search-form input.form-control:focus + button {
+  color: #f79447;
 }
 
 .custom-search-form button {
@@ -1504,7 +1587,7 @@ div.wpcf7-mail-sent-ok {
   right: 0;
   background-color: transparent;
   border: 0;
-  color: #f79447;
+  color: #a1a6ab;
 }
 
 .custom-search-form button:hover {
@@ -1518,9 +1601,9 @@ div.wpcf7-mail-sent-ok {
 }
 
 .blog-categories .dropdown-menu {
-  background-color: #f9fafb;
+  background-color: #fbfbfb!important;
   border: 1px solid rgba(0,0,0,.125);
-  border-radius: 100px
+  border-radius: 3px
 }
 
 .blog-categories .dropdown-item {
@@ -1529,7 +1612,7 @@ div.wpcf7-mail-sent-ok {
 
 .blog-categories .dropdown-item:hover {
   color: #f79447;
-  background-color: #f9fafb;
+  background-color: transparent;
 }
 
 #article-body h1, 
@@ -1711,10 +1794,6 @@ div.wpcf7-mail-sent-ok {
   /* border-top: solid 1px #eee; */
 }
 
-.comment-form .form-control {
-  border-radius: 3px;
-}
-
 /* Specific WordPress Comment Styles */
 
 #comments .comment-metadata {
@@ -1759,10 +1838,6 @@ p.logged-in-as {
 
 .contact-form {
   text-align: left;
-}
-
-.contact-form .form-control {
-  border-radius: 3px;
 }
 
 .contact-form br {

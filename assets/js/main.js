@@ -100,7 +100,7 @@ $(".navbar-light").find("a").click(function(e) {
     e.preventDefault();
     var section = $(this).attr("href");
     $("html, body").animate({
-        scrollTop: $(section).offset().top
+        scrollTop: $(section).offset().top - 100
     }, 2000);
 });
 

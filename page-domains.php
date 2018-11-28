@@ -43,16 +43,7 @@ get_header();
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link mr-2" href="#test-section">Key Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mr-2" href="#test-section">Unmanaged Hosting</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mr-2" href="#test-section">Managed Hosting</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mr-2" href="#test-section">Full Packages Overview</a>
+                <a class="nav-link mr-2" href="#domain-pricing">Domain Pricing</a>
               </li>
             </ul>
           </div>
@@ -77,21 +68,36 @@ get_header();
             </tr>
           </thead>
           <tbody>
+            
+            <?php $loop = new WP_Query( array( 'post_type' => 'tlds', 'orderby' => 'post_id', 'order' => 'ASC', 'posts_per_page' => -1 ) ); ?>
+            
+            <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
+          
+            <?php
+             $tld = get_the_title();
+             $tld_reg_renewal  = do_shortcode('[whmcs tld="'.$tld.'" type="register" reg="1y"]');;
+             $tld_transfer  = do_shortcode('[whmcs tld="'.$tld.'" type="transfer" reg="1y"]');;
+            ?>
+            
             <tr>
-              <td>.co.uk</td>
-              <td>£11.50</td>
-              <td>FREE</td>
+              <td>.<?php the_title(); ?></td>
+
+              <?php if($tld_reg_renewal === "£0.00 GBP") { ?>
+                <td>FREE</td>
+              <?php } else { ?>
+                <td><?php echo $tld_reg_renewal; ?></td>
+              <?php } ?>
+              
+              <?php if($tld_transfer === "£0.00 GBP") { ?>
+                <td>FREE</td>
+              <?php } else { ?>
+                <td><?php echo $tld_transfer; ?></td>
+              <?php } ?>
+              
             </tr>
-            <tr>
-              <td>.com</td>
-              <td>£14.50</td>
-              <td>£13.00</td>
-            </tr>
-            <tr>
-              <td>.net</td>
-              <td>£14.50</td>
-              <td>£13.00</td>
-            </tr>
+            
+            <?php endwhile; ?>
+            
           </tbody>
         </table>
       </div>

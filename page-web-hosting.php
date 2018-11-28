@@ -40,13 +40,10 @@ $ecom_form  = get_field('ecom_form');
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link mr-2" href="#test-section">Key Features</a>
+                <a class="nav-link mr-2" href="#key-features">Key Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mr-2" href="#test-section">Unmanaged Hosting</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mr-2" href="#test-section">Managed Hosting</a>
+                <a class="nav-link mr-2" href="#hosting-management">Managed Vs Unmanaged Hosting</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mr-2" href="#test-section">Full Packages Overview</a>
@@ -191,8 +188,99 @@ $ecom_form  = get_field('ecom_form');
       </div>
     </section>
     
-    <section id="test-section">
-      
+    <section id="key-features">
+      <div class="container">
+        <div class="kf-section-title">
+          <h6>Included in every package</h6>
+          <h2>Key Hosting Features</h2> 
+          <p>Everything you need for a successful website.</p>
+          
+        </div>
+        <div class="row top-features">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/bandwidth.svg"></img>
+            <h5>Unlimited Bandwidth</h5>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/ssl.svg"></img>
+            <h5>Free SSL Certificates</h5>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/ssd.svg"></img>
+            <h5>100% SSD Storage</h5>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/one-click.svg"></img>
+            <h5>70+ One-Click Install Apps</h5>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/technology.svg"></img>
+            <h5>Powerful Market-Leading Technology</h5>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/data.svg"></img>
+            <h5>Secure, State-of-the-Art UK Data Centre</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="our-platform">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h6>Powerful, scaleable &amp; Dynamic</h6>
+            <h2>A Hosting Platform Like No Other</h2>
+            <br>
+            <p>Our powerful, bespoke hosting platform has been designed for you by experts with over twenty years’ industry experience. We provide you with unbeatable load-balanced cloud hosting, meaning there’s no single point of failure and your website performance will never be affected by other users’ websites, visitors or activity. All servers have SSD storage as standard, and we’ve optimised every part of your experience for maximum speed and security. Our hosting is designed to scale as your website grows, meaning the same great performance no matter how popular you get.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cloud-hosting.svg"></img>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--<section id="hosting-management">-->
+    <!--  <div class="container">-->
+    <!--    <h6>Managed vs unmanaged</h6>-->
+    <!--    <h2>What's the Difference?</h2>-->
+    <!--  </div>-->
+    <!--</section>-->
+    
+    <section id="full-overview">
+      <div class="container">
+        <table class="table table-striped table-bordered table-responsive-sm">
+          <thead>
+            <tr>
+              <th scope="col" width= "20%"></th>
+              <th scope="col" width= "20%">Essential</th>
+              <th scope="col" width= "20%">Advanced</th>
+              <th scope="col" width= "20%">Business</th>
+              <th scope="col" width= "20%">Business Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Space</td>
+              <td>10GB</td>
+              <td>50GB</td>
+              <td>100GB</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>.com</td>
+              <td>£14.50</td>
+              <td>£13.00</td>
+            </tr>
+            <tr>
+              <td>.net</td>
+              <td>£14.50</td>
+              <td>£13.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
 

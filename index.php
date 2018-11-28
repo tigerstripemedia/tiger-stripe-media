@@ -38,7 +38,7 @@ get_header();
 			
 				<div class="blog-categories ml-auto">
 					<div class="dropdown">
-						<button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-folder-open"></i> Categories
 						</button>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

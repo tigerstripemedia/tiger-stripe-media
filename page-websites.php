@@ -51,7 +51,7 @@ $ecom_form  = get_field('ecom_form');
     <!--      </ul>-->
     <!--    </div>-->
         
-    <!--    <button class="btn btn-primary ml-auto" type="button">Get a Quote <i class="fas fa-angle-double-right"></i></button>-->
+    <!--    <button class="btn btn-success ml-auto" type="button">Get a Quote <i class="fas fa-angle-double-right"></i></button>-->
         
     <!--  </div>-->
     <!--</nav>-->
@@ -81,7 +81,7 @@ $ecom_form  = get_field('ecom_form');
                 <?php echo $bespoke_extras; ?>
               </div>
               <div class="service-plan-footer">
-                <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#websiteModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <button type="button" class="btn btn-success btn-block btn-lg" data-toggle="modal" data-target="#websiteModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@ $ecom_form  = get_field('ecom_form');
                 <?php echo $ecom_extras; ?>
               </div>
               <div class="service-plan-footer">
-                <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#storeModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <button type="button" class="btn btn-success btn-block btn-lg" data-toggle="modal" data-target="#storeModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
           </div>
         </div>
@@ -148,7 +148,7 @@ $ecom_form  = get_field('ecom_form');
         
         <h3><?php echo $question; ?></h3>
         <br>
-        <a href="<?php echo $question_btn_link; ?>" class="btn btn-lg btn-primary">Find out More</a>
+        <a href="<?php echo $question_btn_link; ?>" class="btn btn-lg btn-success">Find out More</a>
         
         <?php endwhile; ?>
         
@@ -224,7 +224,7 @@ $ecom_form  = get_field('ecom_form');
             <!--      <label class="form-check-label" for="seo">Search Engine Optimisation (SEO)</label>-->
             <!--    </div>-->
             <!--  </div>-->
-            <!--  <button type="submit" class="btn btn-primary btn-block">Submit</button>-->
+            <!--  <button type="submit" class="btn btn-success btn-block">Submit</button>-->
             <!--</form>-->
           </div>
         </div>
@@ -236,7 +236,7 @@ $ecom_form  = get_field('ecom_form');
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="storeModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="storeModalLabel">Custom e-Commerce Store Quote</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
