@@ -75,25 +75,17 @@ get_header();
           
             <?php
              $tld = get_the_title();
-             $tld_reg_renewal  = do_shortcode('[whmcs tld="'.$tld.'" type="register" reg="1y"]');;
-             $tld_transfer  = do_shortcode('[whmcs tld="'.$tld.'" type="transfer" reg="1y"]');;
+             $tld_reg_renewal  = get_field('tld_reg_renewal');
+             $tld_transfer  = get_field('tld_transfer');
             ?>
             
             <tr>
-              <td>.<?php the_title(); ?></td>
+              <td><?php echo $tld; ?></td>
 
-              <?php if($tld_reg_renewal === "£0.00 GBP") { ?>
-                <td>FREE</td>
-              <?php } else { ?>
-                <td><?php echo $tld_reg_renewal; ?></td>
-              <?php } ?>
+              <td><?php echo $tld_reg_renewal; ?></td>
               
-              <?php if($tld_transfer === "£0.00 GBP") { ?>
-                <td>FREE</td>
-              <?php } else { ?>
-                <td><?php echo $tld_transfer; ?></td>
-              <?php } ?>
-              
+              <td><?php echo $tld_transfer; ?></td>
+
             </tr>
             
             <?php endwhile; ?>
