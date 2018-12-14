@@ -11,9 +11,7 @@
 
 <section class="no-results not-found">
 	<section id="page-header">
-      <div class="page-title">
-      	<h2><?php esc_html_e( 'Nothing Found', 'tiger-stripe-media' ); ?></h2>
-      </div>
+      	<h1 class="blog-title">Search the TSM Blog</h1>
     </section>
 
 	<section id="blog-body">

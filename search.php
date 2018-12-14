@@ -13,32 +13,46 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 		
 		<section id="page-header">
-			<!--<div class="page-title">-->
-				<h3>
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'tiger-stripe-media' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h3>
-			<!--</div>-->
+			
+			<h1 class="blog-title">Search the TSM Blog</h1>
+	        <h6 class="blog-sub-title">
+				<?php
+				/* translators: %s: search query. */
+				printf( esc_html__( 'Showing the search results for: %s', 'tiger-stripe-media' ), '<span>' . get_search_query() . '</span>' );
+				?>
+			</h6>
 		</section>
 		
-		<section id="blog-nav">
-		    <div class="container">
-				<div class="row">
-		          <div class="col-lg-4 offset-lg-4 blog-search">
-		            <!--<form role="search" method="get" class="form-inline custom-form search-form" action="<?php echo home_url( '/' ); ?>">-->
-		            <!--  <div class="form-group mb-2">-->
-		            <!--    <label for="search" class="sr-only">Search the Blog</label>-->
-		            <!--    <input class="form-control" type="search" id="search" placeholder="Search the blog...">-->
-		            <!--  </div>-->
-		            <!--  <button type="submit" class="btn btn-primary mb-2"><i class="fas fa-search"></i></button>-->
-		            <!--</form>-->
-		            <?php echo get_search_form(); ?>
-		          </div>
+		<section id="second-nav-placeholder">
+		      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="second-nav">
+		        <div class="container">
+		        	
+					<div class="blog-search">
+						<?php echo get_search_form(); ?>
+					</div>
+		        
+					<div class="collapse navbar-collapse">
+					
+						<div class="blog-categories ml-auto">
+							<div class="dropdown">
+								<button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-folder-open"></i> Categories
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<?php
+										$categories = get_categories();
+										foreach($categories as $category) {
+										echo '<a class="dropdown-item" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
+										}
+									?>
+								</div> 
+							</div>
+						</div>
+					</div>
+		  
 		        </div>
-		    </div>
-		</section>
+		      </nav>
+		    </section>
 
 		<section id="blog-body">
       		<div class="container">
@@ -63,18 +77,19 @@ get_header();
 					<?php	
 					endwhile;
 		
-					the_posts_navigation();
+					the_posts_navigation(); ?>
 		
-				else :
-		
-					get_template_part( 'template-parts/content', 'none' );
-		
-				endif;
-				?>
-
 				</div>
 	      	</div>
 	    </section>
+	    
+	    <?php
+	    else :
+		
+			get_template_part( 'template-parts/content', 'none' );
+	
+		endif;
+		?>
 
 <?php
 get_footer();

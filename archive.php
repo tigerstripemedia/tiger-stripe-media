@@ -22,37 +22,36 @@ get_header();
 		      </div>
 		    </section>
 		    
-		    <section id="blog-nav">
-			    <div class="container">
-					<div class="row">
-			          <div class="col-lg-4 blog-search">
-			            <!--<form role="search" method="get" class="form-inline custom-form search-form" action="<?php echo home_url( '/' ); ?>">-->
-			            <!--  <div class="form-group mb-2">-->
-			            <!--    <label for="search" class="sr-only">Search the Blog</label>-->
-			            <!--    <input class="form-control" type="search" id="search" placeholder="Search the blog...">-->
-			            <!--  </div>-->
-			            <!--  <button type="submit" class="btn btn-primary mb-2"><i class="fas fa-search"></i></button>-->
-			            <!--</form>-->
-			            <?php echo get_search_form(); ?>
-			          </div>
-			          <div class="col-lg-4 offset-lg-4 blog-categories">
-			            <div class="dropdown mb-2">
-			              <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			                <i class="fas fa-folder-open"></i> Categories
-			              </button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<?php
-								$categories = get_categories();
-								foreach($categories as $category) {
-								   echo '<a class="dropdown-item" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
-								}
-								?>
-							</div> 
-			            </div>
-			          </div>
-			        </div>
-			    </div>
-			</section>
+		    <section id="second-nav-placeholder">
+		      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="second-nav">
+		        <div class="container">
+		        	
+					<div class="blog-search">
+						<?php echo get_search_form(); ?>
+					</div>
+		        
+					<div class="collapse navbar-collapse">
+					
+						<div class="blog-categories ml-auto">
+							<div class="dropdown">
+								<button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-folder-open"></i> Categories
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<?php
+										$categories = get_categories();
+										foreach($categories as $category) {
+										echo '<a class="dropdown-item" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
+										}
+									?>
+								</div> 
+							</div>
+						</div>
+					</div>
+		  
+		        </div>
+		      </nav>
+		    </section>
 				
 			<section id="blog-body">
 		      <div class="container">

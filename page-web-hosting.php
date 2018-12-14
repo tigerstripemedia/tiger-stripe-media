@@ -46,7 +46,7 @@ $ecom_form  = get_field('ecom_form');
                 <a class="nav-link mr-2" href="#hosting-management">Managed Vs Unmanaged Hosting</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mr-2" href="#test-section">Full Packages Overview</a>
+                <a class="nav-link mr-2" href="#full-overview">Full Packages Overview</a>
               </li>
             </ul>
           </div>
