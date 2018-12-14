@@ -517,16 +517,6 @@ input, select, textarea {
     vertical-align: top;
 }
 
-#did-you-know {
-  background: url('/wp-content/themes/tiger-stripe-media/assets/img/stripe-background.png') repeat;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.question-icon {
-  color: #f79447;
-}
-
 .default-page {
   padding: 50px 0;
 }
