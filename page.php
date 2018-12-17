@@ -17,7 +17,7 @@ get_header();
 
 	<section id="page-header">
       <div class="page-title">
-        <h2><?php the_title(); ?></h2>
+        <h1><?php the_title(); ?></h1>
       </div>
     </section>
 
