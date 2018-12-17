@@ -435,6 +435,10 @@ input, select, textarea {
   border-color: #f79447;
 }
 
+.grecaptcha-badge {
+   display: none; 
+}
+
 .btn {
   font-weight: 400;
 }
