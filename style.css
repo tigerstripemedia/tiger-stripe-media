@@ -497,6 +497,10 @@ input, select, textarea {
   box-shadow: 0 0 0 0.2rem rgba(247,148,73,.5);
 }
 
+.btn-success {
+  border-radius: 100px;
+}
+
 
 
 /*.custom-form .form-control{*/

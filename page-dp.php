@@ -52,30 +52,13 @@ get_header();
                 <?php echo $dp_fts; ?>
               </div>
               <div class="service-plan-footer">
-                <button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#dpModal">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <a href="/quote" type="button" class="btn btn-success btn-block btn-lg">Get a Quote <i class="fas fa-angle-double-right"></i></button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    <!-- Design & Print Modal -->
-    <div class="modal fade" id="dpModal" tabindex="-1" role="dialog" aria-labelledby="dpModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="dpModalLabel">Design & Print Quote</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <?php echo $dp_form; ?>
-          </div>
-        </div>
-      </div>
-    </div>
 
 <?php
 get_footer();
