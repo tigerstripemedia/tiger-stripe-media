@@ -81,7 +81,7 @@ $ecom_form  = get_field('ecom_form');
                 <?php echo $bespoke_extras; ?>
               </div>
               <div class="service-plan-footer">
-                <a href="/quote" type="button" class="btn btn-success btn-block btn-lg">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <a href="/quote" type="button" class="btn btn-success btn-block btn-lg">Get a Quote <i class="fas fa-angle-double-right"></i></a>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@ $ecom_form  = get_field('ecom_form');
                 <?php echo $ecom_extras; ?>
               </div>
               <div class="service-plan-footer">
-                <a href="/quote" type="button" class="btn btn-success btn-block btn-lg">Get a Quote <i class="fas fa-angle-double-right"></i></button>
+                <a href="/quote" type="button" class="btn btn-success btn-block btn-lg">Get a Quote <i class="fas fa-angle-double-right"></i></a>
               </div>
           </div>
         </div>
