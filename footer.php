@@ -59,7 +59,7 @@
     </div>
   </div>
   <div class="copyright">
-    <small>&copy; 2018 Tiger Stripe Media | Website made with &#9825; by Tiger Stripe Media</small>
+    <small>&copy; 2018 Tiger Stripe Media | Made with &#9825; by Tiger Stripe Media</small>
   </div>
 
 </footer>
