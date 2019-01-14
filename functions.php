@@ -336,3 +336,12 @@ return $query;
 }
 add_filter('pre_get_posts','wpb_search_filter');
 }
+
+//Remove Performance
+function ds_w3tc_remove_adminbar() {
+   global $wp_admin_bar;
+     if ( ! is_super_admin() ) {
+        $wp_admin_bar->remove_menu('w3tc');
+    }
+}
+add_action( 'admin_bar_menu','ds_w3tc_remove_adminbar',999);
