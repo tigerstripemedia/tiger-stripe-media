@@ -16,7 +16,7 @@ get_header();
       <div class="container">
         <div class="home-jumbo-text">
           <h1 class="new-typewriter display-4"></h1>
-          <h5 style="-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 17s both; animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 17s both;">We are a digital agency specicialising in website design, graphic design & web hosting.</h5>
+          <h5 style="-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 17s both; animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 17s both;">We are a digital agency specialising in website design, graphic design & web hosting.</h5>
         </div>
       </div>
     </div>
