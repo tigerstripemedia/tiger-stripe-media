@@ -1,84 +1,102 @@
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("nav").style.top = "0";
-//   } else {
-//     document.getElementById("nav").style.top = "-63px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
+// // For the typewriter text animation on home screen
+// var TxtType = function(el, toRotate, period) {
+//         this.toRotate = toRotate;
+//         this.el = el;
+//         this.loopNum = 0;
+//         this.period = parseInt(period, 10) || 2000;
+//         this.txt = '';
+//         this.tick();
+//         this.isDeleting = false;
+//     };
 
-// if( document.body.className.match('logged-in') ) { 
-//   window.onscroll = function() {
-//     var currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
-//       document.getElementById("nav").style.top = "32px";
+// TxtType.prototype.tick = function() {
+//     var i = this.loopNum % this.toRotate.length;
+//     var fullTxt = this.toRotate[i];
+
+//     if (this.isDeleting) {
+//     this.txt = fullTxt.substring(0, this.txt.length - 1);
 //     } else {
-//       document.getElementById("nav").style.top = "-63px";
+//     this.txt = fullTxt.substring(0, this.txt.length + 1);
 //     }
-//     prevScrollpos = currentScrollPos;
-//   }
-// }
 
-// For the typewriter text animation on home screen
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+//     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+//     var that = this;
+//     var delta = 200 - Math.random() * 100;
 
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+//     if (this.isDeleting) { delta /= 2; }
+
+//     if (!this.isDeleting && this.txt === fullTxt) {
+//     delta = this.period;
+//     this.isDeleting = true;
+//     } else if (this.isDeleting && this.txt === '') {
+//     this.isDeleting = false;
+//     this.loopNum++;
+//     delta = 500;
+//     }
+
+//     setTimeout(function() {
+//     that.tick();
+//     }, delta);
+// };
+
+// window.onload = function() {
+//     var elements = document.getElementsByClassName('typewrite');
+//     for (var i=0; i<elements.length; i++) {
+//         var toRotate = elements[i].getAttribute('data-type');
+//         var period = elements[i].getAttribute('data-period');
+//         if (toRotate) {
+//           new TxtType(elements[i], JSON.parse(toRotate), period);
+//         }
+//     }
+//     // INJECT CSS
+//     var css = document.createElement("style");
+//     css.type = "text/css";
+//     css.innerHTML = ".typewrite > .wrap { border-right: 0.06em solid #f79447}";
+//     document.body.appendChild(css);
+// };
+
+// New TypeWriter
+document.addEventListener('DOMContentLoaded',function(event){
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector(".new-typewriter").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
     }
-
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
     }
-
-    setTimeout(function() {
-    that.tick();
-    }, delta);
-};
-
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
     }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.06em solid #f79447}";
-    document.body.appendChild(css);
-};
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
 
 // Tooltip Code (for service plans)
 $(function () {
@@ -96,7 +114,7 @@ $(window).scroll(function(){
 });
 
 // Smooth Scroll on click
-$(".navbar-light").find("a").click(function(e) {
+$(".navbar-second").find("a").click(function(e) {
     e.preventDefault();
     var section = $(this).attr("href");
     $("html, body").animate({
@@ -104,28 +122,7 @@ $(".navbar-light").find("a").click(function(e) {
     }, 2000);
 });
 
-// Secondary Nav Fixed
-// $(document).ready(function() {
-  
-//   var headerHeight = $(".page-header").height();
-  
-//   $(window).scroll(function () {
-//       //if you hard code, then use console
-//       //.log to determine when you want the 
-//       //nav bar to stick.  
-//       console.log($(window).scrollTop())
-//     if ($(window).scrollTop() > headerHeight) {
-//       $('.navbar-light').addClass('fixed-top-second');
-//     }
-//     if ($(window).scrollTop() < headerHeight + 1) {
-//       $('.navbar-light').removeClass('fixed-top-second');
-//     }
-//   });
-
-// });
-
-
-
+// Fix second nav top on scroll
 window.onscroll = function fixedScroll() {secNavScroll()};
 
 var header = document.getElementById("second-nav");

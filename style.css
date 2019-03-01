@@ -35,6 +35,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 8.0 Media
 	8.1 Captions
 	8.2 Galleries
+	
 9.0 Custom Theme Styles
 	9.1 Theme Info
 	9.2	Global
@@ -47,17 +48,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		9.6.3 Services
 		9.6.4 Latest Posts
 		9.6.5 Testimonials
-	9.7 Websites Page
-	9.8 Design & Print Page
-	9.9 Social Media Page
-	9.10 Web Hosting Page
-	9.11 Domains Page
-	9.12 Blog Page
-	9.13 Blog Article Page
-	9.14 Contact Page
-	9.15 Coming Soon Page
-	9.16 404 Page
-	9.17 Media Queries
+	9.7 Service Pages
+	  9.7.1 Global Service Pages Styles
+	  9.7.2 Website Design Page
+	  9.7.3 Graphic Design Page
+	  9.7.4 Managed Web Hosting Page
+	  9.7.5 Standard Web Hosting Page
+	  9.7.6 Domains Page
+	9.8 Blog Page
+	9.9 Blog Article Page
+	9.10 Contact Page
+	9.11 Coming Soon Page
+	9.12 404 Page
+	9.13 Login Page
+	9.14 Media Queries
 	
 --------------------------------------------------------------*/
 
@@ -391,25 +395,29 @@ Standard Text: #333
 9.2 Global
 --------------------------------------------------------------*/
 
-/* Fix the top margin when logged in */
+/* --- Fix the top margin when logged in --- */
 .logged-in .fixed-top, .logged-in .fixed-top-second {
 	top: 32px;
 }
-/* --- */
+/* ----------------------------------------- */
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #333;
 }
 
 h1, h2, h3, h4, h5, h6, p, small {
-  font-weight: 400;
+  font-weight: 300;
   color: #333;
 }
 
 input, select, textarea {
-  font-weight: 400;
+  font-weight: 300;
+}
+
+a {
+  color: #337ab7;
 }
 
 .hr {
@@ -501,15 +509,8 @@ input, select, textarea {
   border-radius: 100px;
 }
 
-
-
-/*.custom-form .form-control{*/
-/*  border-radius: 3px;*/
-/*  border: 0;*/
-/*}*/
-
 .custom-form .form-group {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .custom-form .form-group br {
@@ -544,71 +545,6 @@ div.wpcf7-mail-sent-ok {
   color: #155724;
   background-color: #d4edda;
   border-color: #c3e6cb;
-}
-
-.share-title {
-  text-align: center;
-}
-
-.share-buttons {
-    font-size: 0.7rem;
-    line-height: 0.7rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0 0 60px;
-    z-index: 2;
-    position: relative;
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-}
-
-.share-buttons li {
-    height: auto;
-    flex: 0 1 auto;
-    width: 25%;
-    /*width: calc(25% - 1px);*/
-    /*margin-right: 1px;*/
-}
-
-.share-buttons li:last-child {
-    width: 25%;
-    margin-right: 0;
-}
-
-.share-buttons a {
-    display: block;
-    padding: 12px 12px 9px;
-    text-align: center;
-    color: #fff;
-}
-
-.share-buttons li:first-child a {
-    border-radius: 3px 0 0 3px;
-}
-
-.share-buttons li:last-child a {
-    border-radius: 0 3px 3px 0;
-}
-
-.share-twitter	{
-    background: #1da1f2;
-}
-
-.share-facebook	{
-    background: #3b5998;
-}
-
-.share-googleplus	{
-    background: #db4437;
-}
-
-.share-linkedin	{
-    background: #0077b5;
 }
 
 .ztb-customchatbox-logo {
@@ -668,9 +604,15 @@ div.wpcf7-mail-sent-ok {
 }
 
 table .false-th {
-  background-color: #f2f2f2!important;
-  border-top-color: transparent!important;
-  border-left-color: transparent!important;
+  border-top-color: #f1f1f1!important;
+  border-left-color: #f1f1f1!important;
+  background: #f1f1f1!important;
+}
+
+table .false-td {
+    border-left-color: #f1f1f1!important;
+    border-bottom-color: #f1f1f1!important;
+    background: #f1f1f1!important;
 }
 
 .navbar.navbar-light.bg-light {
@@ -688,7 +630,7 @@ table .false-th {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 1000;
     margin-top: 63.22px;
 }
 
@@ -698,23 +640,6 @@ table .false-th {
 
 #page-body {
   padding: 50px 0;
-}
-
-#service-plans {
-  padding-bottom: 40px;
-  background-color: #f1f1f1;
-}
-
-#service-plans .feature-instructions {
-  display: block;
-  color: rgba(0, 0, 0, 0.2);
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 50px;
-}
-
-#service-plans .feature-instructions-mobile {
-  display: none;
 }
 
 #service-plans .row {
@@ -742,14 +667,8 @@ table .false-th {
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
-  /*transition: all .2s ease-in-out;*/
   position: relative;
 }
-
-/*.service-plan:hover {*/
-/*  box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.08);*/
-/*  transform: scale(1.02);*/
-/*}*/
 
 .service-plan-icon {
   position: absolute;
@@ -771,23 +690,6 @@ table .false-th {
   flex: 1 1 auto;
 }
 
-.service-plan-content a {
-  border-bottom: 1px dotted #ccc;
-  text-decoration: none;
-  color: #333;
-}
-
-.service-plan-content a:hover {
-  border-bottom: 1px dotted #333;
-  text-decoration: none;
-  color: #333;
-  cursor: default;
-}
-
-.service-plan-content a span {
-  font-size: 0.83em;
-}
-
 .service-plan-footer {
   padding: 30px;
   background-color: #fbfbfb;
@@ -797,6 +699,31 @@ table .false-th {
 
 .service-plan-footer .btn-success {
   border-radius: 100px;
+}
+
+#faq {
+  padding: 50px 0;
+}
+
+#faq .card .card-header i {
+  color: #f79447!important;
+}
+
+#faq .card-header h5 i {
+  margin-right: 10px;
+}
+
+#faq .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#faq .section-title h6 {
+  text-transform: uppercase;
+}
+
+#faq a {
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------
@@ -809,21 +736,6 @@ table .false-th {
   box-shadow: 0 1px 0 rgba(12,13,14,0.1), 0 1px 6px rgba(59,64,69,0.1);
   transition: top 0.3s;
 }
-
-/*#top-nav.bg-light {*/
-/*  background-color: #222a32!important;*/
-/*  border-top: 4px solid #f79447;*/
-/*}*/
-
-/*#top-nav.navbar {*/
-/*  padding: 0;*/
-/*}*/
-
-/*#top-nav .nav-link {*/
-/*  padding-top: 0.1rem;*/
-/*  padding-bottom: 0.1rem;*/
-/*  font-size: 14px;*/
-/*}*/
 
 .fixed-top {
   -webkit-transition: all 0.3s ease;
@@ -851,11 +763,15 @@ table .false-th {
 
 .dropdown-item {
   color: rgba(255,255,255,.7);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .dropdown-item:hover {
   color: rgba(255,255,255,.5);
+  background-color: #222a32;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
   background-color: #222a32;
 }
 
@@ -896,6 +812,10 @@ table .false-th {
 .footer-menu a:hover {
   color: rgba(225, 225, 225, 0.9);
   text-decoration: none;
+}
+
+#footer .wpcf7-list-item-label {
+  color: rgba(255,255,255,.8);
 }
 
 .social-icons {
@@ -959,47 +879,6 @@ table .false-th {
   transform: translateY(-8px);
 }
 
-/* Button Load Right */
-/*.btn-load-right {*/
-/*  display: inline-block;*/
-/*  vertical-align: middle;*/
-/*  -webkit-transform: perspective(1px) translateZ(0);*/
-/*  transform: perspective(1px) translateZ(0);*/
-/*  box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
-/*  position: relative;*/
-/*  -webkit-transition-property: color;*/
-/*  transition-property: color;*/
-/*  -webkit-transition-duration: 0.3s;*/
-/*  transition-duration: 0.3s;*/
-/*}*/
-/*.btn-load-right:before {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  z-index: -1;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  bottom: 0;*/
-/*  background: #f79447;*/
-/*  -webkit-transform: scaleX(0);*/
-/*  transform: scaleX(0);*/
-/*  -webkit-transform-origin: 0 50%;*/
-/*  transform-origin: 0 50%;*/
-/*  -webkit-transition-property: transform;*/
-/*  transition-property: transform;*/
-/*  -webkit-transition-duration: 0.3s;*/
-/*  transition-duration: 0.3s;*/
-/*  -webkit-transition-timing-function: ease-out;*/
-/*  transition-timing-function: ease-out;*/
-/*}*/
-/*.btn-load-right:hover, .btn-load-right:focus, .btn-load-right:active {*/
-/*  color: white;*/
-/*}*/
-/*.btn-load-right:hover:before, .btn-load-right:focus:before, .btn-load-right:active:before {*/
-/*  -webkit-transform: scaleX(1);*/
-/*  transform: scaleX(1);*/
-/*}*/
-
 /* Underline From Left */
 .left-underline {
   display: block;
@@ -1038,6 +917,39 @@ table .false-th {
 9.6.1 Banner
 --------------------------------------------------------------*/
 
+#home-banner .jumbotron {
+  background: url('/wp-content/themes/tiger-stripe-media/assets/img/background-1.svg') no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 213.22px 0 150px 0;
+  text-align: center;
+}
+
+#home-banner .jumbotron h1 {
+  color: #fff;
+}
+
+#home-banner .jumbotron h5 {
+  color: #f79447;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .carousel {
   color: black;
   margin-top: 20px;
@@ -1065,7 +977,6 @@ table .false-th {
   bottom: 75px;
   background-color: rgba(247, 148, 73, 0.9);
   padding: 30px;
-  /*min-width: 400px;*/
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
@@ -1105,24 +1016,9 @@ table .false-th {
   animation-name: fade-up;
 }
 
-/*@-webkit-keyframes fadeIn {*/
-/*  0% {opacity: 0;}*/
-/*  100% {opacity: 1;}*/
-/*}*/
-
-/*@keyframes fadeIn {*/
-/*  0% {opacity: 0;}*/
-/*  100% {opacity: 1;}*/
-/*}*/
-
-/*.fadeIn {*/
-/*  -webkit-animation-name: fadeIn;*/
-/*  animation-name: fadeIn;*/
-/*}*/
-
 .carousel-caption h1 {
   color: #fff;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 35px;
 }
 
@@ -1163,6 +1059,18 @@ table .false-th {
   text-decoration: none;
 }
 
+.new-typewriter span {
+  border-right: .05em solid;
+  color: #f79447;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /*--------------------------------------------------------------
 9.6.3 Services
 --------------------------------------------------------------*/
@@ -1172,10 +1080,16 @@ table .false-th {
   padding: 50px 0;
 }
 
-#services h3 {
+#services h2 {
   text-align: center;
   color: #fff;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+#services h6 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 #services h5 {
@@ -1185,6 +1099,10 @@ table .false-th {
 
 #services a:hover {
   text-decoration: none;
+}
+
+#services a:hover h5 {
+  color: #f79447;
 }
 
 .service-icon img {
@@ -1252,54 +1170,166 @@ table .false-th {
 }
 
 /*--------------------------------------------------------------
-9.7 Websites Page
+9.7 Service Pages
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.7.1 Global Service Pages Styles
 --------------------------------------------------------------*/
 
-#website-brands {
-  background-color: #222a32;
-  padding: 30px 0;
+.feature-instructions {
+  display: block;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 50px;
 }
 
-#website-brands img {
+.feature-instructions-mobile {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+9.7.2 Website Design Page
+--------------------------------------------------------------*/
+
+#website-packages {
+  padding-bottom: 50px;
+  background-color: #f1f1f1;
+}
+
+.website-plan-features {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.website-plan-features .fa-check {
+  color: #28a745;
+}
+
+#cms {
+  background-color: #222a32;
+  padding: 50px 0;
+}
+
+#cms .section-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#cms h2 {
+  color: #fff;
+}
+
+#cms .section-title h6 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#cms img {
   width: 325px;
   margin: auto;
   display: block;
 }
 
-#website-brands p {
-  color: rgba(225, 225, 225, 0.9);
+#cms p {
+  color: #fff;
   text-align: center;
   margin-top: 20px;
 }
 
 /*--------------------------------------------------------------
-9.8 Design & Print Page
+9.7.3 Graphic Design Page
 --------------------------------------------------------------*/
 
-#design-print {
-  padding-bottom: 80px;
+#design-packages {
+  padding-bottom: 50px;
   background-color: #f1f1f1;
 }
 
-#design-print .row {
-   display: flex;
-   flex-wrap: wrap;
+#design-packages .package-type-title {
+  text-align: center;
+  padding-top: 30px;
 }
 
-#design-print .row > div[class*='col-'] {
-  display: flex;
+#design-packages .package-type-title h2 {
+  color: #7c7c7c;
 }
 
-.intro-dp {
-  padding-top: 80px;
+#design-packages .package-type-title h6 {
+  text-transform: uppercase;
+  color: #7c7c7c;
+}
+
+.email-signature-content {
+  padding: 90px 30px 0 30px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.signature-example {
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 185px;
+  /*border-radius: 10px;*/
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: .5px .5px 4px 1px rgba(0, 0, 0, 0.03);
+}
+
+.signature-example img {
+  width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+9.7.4 Managed Hosting Page
+--------------------------------------------------------------*/
+
+table .price-td {
+    background: #fff!important;
+}
+
+#managed-page-header {
+  background: url('/wp-content/themes/tiger-stripe-media/assets/img/background-1.svg') no-repeat;
+  background-size: cover;
+  padding: 125px 0 0 0;
   text-align: center;
 }
 
-.dp-plan {
+.managed-page-title h1 {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.managed-page-title h5 {
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+.managed-page-title h6 {
+  color: #f2f2f2;
+}
+
+.managed-page-title h2,
+.managed-page-title h3 {
+  color: #fff;
+}
+
+.managed-badges img {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.need-a-website a:hover {
+  text-decoration: none;
+}
+
+.bp-plan {
   border: 1px solid rgba(0,0,0,.06);
   box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.06);
-  margin-top: 140px;
-  /* border-radius: 5px; */
+  margin-top: 60px;
   text-align: center;
   width: 100%;
   display: -webkit-box;
@@ -1312,72 +1342,148 @@ table .false-th {
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
+  position: relative;
 }
 
-.dp-plan-icon {
-  width: 160px;
+.bp-plan-icon {
   position: absolute;
-  top: 59px;
+  top: -100px;
   right: 0;
   left: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
-.dp-plan-content {
-  padding: 120px 30px 30px 30px;
+.bp-plan-icon img {
+  height: 179px;
+}
+
+.bp-plan-content {
+  padding: 90px 30px 0 30px;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.dp-plan-content a {
-  border-bottom: 1px dotted #ccc;
-  text-decoration: none;
-  color: #333;
+.bp-features {
+  text-align: left;
+  margin-left: 5px;
 }
 
-.dp-plan-content a:hover {
-  border-bottom: 1px dotted #333;
-  text-decoration: none;
-  color: #333;
+.bp-features .fa-check {
+  color: #28a745;
 }
 
-.dp-plan-footer {
-  padding: 30px;
-  background-color: rgba(0,0,0,.03);
+.hosting-plan-price {
+  color: #f79447;
+  position: relative;
+}
+
+.hosting-plan-price .pounds {
+  font-size: 2.3em;
+  font-weight: 400;
+}
+
+.hosting-plan-price .pence {
+  font-size: 0.9em;
+  position: absolute;
+  top: 15px;
+  font-weight: 400;
+}
+
+.hosting-plan-price .per-month {
+  font-size: 0.6em;
+  color: #979797;
+}
+
+.bp-plan-footer {
+  padding: 20px;
+  background-color: #fbfbfb;
   border-top: 1px solid rgba(0,0,0,.125);
   bottom: 0;
-  background-color: #fbfbfb;
+}
+
+.bp-plan-footer .btn-success {
+  border-radius: 100px;
+}
+
+#managed-key-features {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+
+#managed-key-features .feature-instructions {
+  display: block;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+#managed-key-features .feature-instructions-mobile {
+  display: none;
+}
+
+#managed-key-features img {
+  height: 80px;
+  display: block;
+  margin: auto;
+}
+
+#managed-key-features h6 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+#wordpress-designed {
+  padding: 50px 0 20px 0;
+}
+
+#wordpress-designed h6 {
+  text-transform: uppercase;
+}
+
+#wordpress-designed img {
+  display: block;
+  margin: auto;
+  max-height: 300px;
+}
+
+#free-switch {
+  padding: 50px 0;
+}
+
+#free-switch h6 {
+  text-transform: uppercase;
+}
+
+#free-switch img {
+  display: block;
+  margin: auto;
+  max-height: 300px;
+}
+
+.managed-section-title {
+  text-align: center;
+}
+
+.managed-section-title h6 {
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
-9.9 Social Media Page
+9.7.5 Standard Hosting Page
 --------------------------------------------------------------*/
 
-#social-media {
-  padding-bottom: 80px;
+#sh-packages {
+  background-color: #f1f1f1;
+  padding: 50px 0;
 }
 
-#social-media .row {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-#social-media .row > div[class*='col-'] {
-  display: flex;
-}
-
-.intro-social {
-  text-align: center;
-  padding-top: 80px;
-}
-
-.sm-plan {
+.sh-plan {
   border: 1px solid rgba(0,0,0,.06);
   box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.06);
-  margin-top: 140px;
-  /* border-radius: 5px; */
+  margin-top: 150px;
   text-align: center;
   width: 100%;
   display: -webkit-box;
@@ -1389,73 +1495,62 @@ table .false-th {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
+  background-color: #fff;
+  position: relative;
 }
 
-.sm-plan-icon {
-  width: 150px;
+.sh-plan-icon {
   position: absolute;
-  top: 75px;
+  top: -100px;
   right: 0;
   left: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
-.sm-plan-content {
-  padding: 120px 30px 30px 30px;
+.sh-plan-icon img {
+  height: 179px;
+}
+
+.sh-plan-content {
+  padding: 90px 30px 0 30px;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.sm-plan-content a {
-  border-bottom: 1px dotted #ccc;
-  text-decoration: none;
-  color: #333;
+.sh-features {
+  text-align: left;
+  margin-left: 5px;
 }
 
-.sm-plan-content a:hover {
-  border-bottom: 1px dotted #333;
-  text-decoration: none;
-  color: #333;
+.sh-features .fa-check {
+  color: #28a745;
 }
 
-.sm-plan-info {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1em;
-}
-
-.sm-plan-footer {
-  padding: 30px;
-  background-color: rgba(0,0,0,.03);
+.sh-plan-footer {
+  padding: 20px;
+  background-color: #fbfbfb;
   border-top: 1px solid rgba(0,0,0,.125);
   bottom: 0;
 }
 
-/*--------------------------------------------------------------
-9.10 Web Hosting Page
---------------------------------------------------------------*/
-
-.service-plan-price {
-  color: #f79447;
-  position: relative;
+.sh-plan-footer .btn-success {
+  border-radius: 100px;
 }
 
-.service-plan-price .pounds {
-  font-size: 2.3em;
+.managed-link {
+  padding-top: 50px;
 }
 
-.service-plan-price .pence {
-  font-size: 0.9em;
-  position: absolute;
-  top: 15px;
+.managed-link img {
+  height: 90px;
+  float: left;
+  margin-right: 25px;
 }
 
-.service-plan-price .per-month {
-  font-size: 0.6em;
-  color: #979797;
+.managed-link h6 {
+  font-weight: 300;
 }
 
 #key-features {
@@ -1464,7 +1559,11 @@ table .false-th {
   text-align: center;
 }
 
-#key-features h2, #key-features h4, #key-features h5, #key-features h6, #key-features p {
+#key-features h2, 
+#key-features h4, 
+#key-features h5, 
+#key-features h6, 
+#key-features p {
   color: #fff;
 }
 
@@ -1487,18 +1586,6 @@ table .false-th {
   margin: 20px 0;
 }
 
-#key-features .other-features {
-  text-align: left;
-}
-
-#key-features .other-features h5 {
-  color: #fff;
-}
-
-#key-features .other-features h5 i {
-  color: #009444;
-}
-
 #our-platform {
   padding: 50px 0;
   background-color: #f1f1f1;
@@ -1514,24 +1601,18 @@ table .false-th {
   max-width: 500px;
 }
 
-#hosting-management {
+#control-panel {
   padding: 50px 0;
-  text-align: center;
-  background-color: #222a32;
 }
 
-#hosting-management h2 {
-  color: #fff;
-  margin-bottom: 40px;
-}
-
-#hosting-management h6 {
+#control-panel h6 {
   text-transform: uppercase;
-  color: #fff;
 }
 
-#hosting-management h4, #hosting-management h5, #hosting-management p {
-  color: #fff;
+#control-panel img {
+  display: block;
+  margin: auto;
+  max-width: 500px;
 }
 
 #full-overview {
@@ -1558,26 +1639,17 @@ table .false-th {
   height: 100px;
 }
 
-#frequent-questions {
-  padding: 50px 0;
+#full-overview table .fa-check {
+  color: #28a745;
 }
 
-#frequent-questions .section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-#frequent-questions .section-title h6 {
-  text-transform: uppercase;
-}
-
-#frequent-questions a {
-  cursor: pointer;
+#full-overview table .fa-times {
+  color: #dc3545;
 }
 
 
 /*--------------------------------------------------------------
-9.11 Domains Page
+9.7.6 Domains Page
 --------------------------------------------------------------*/
 
 .domain-search .input-group-prepend .input-group-text {
@@ -1603,15 +1675,32 @@ table .false-th {
   background-color: #f1f1f1;
 }
 
-#domain-pricing .domain-pricing-header {
+.domain-section-header {
   text-align: center;
   padding-bottom: 20px;
 }
 
+#second-domain-search {
+  padding: 50px 0;
+  background-color: #222a32;
+}
+
+#second-domain-search .section-title {
+  text-align: center;
+}
+
+#second-domain-search h2 {
+  color: #fff;
+}
+
+#second-domain-search .section-title h6 {
+  text-transform: uppercase;
+  color: #fff;
+}
 
 
 /*--------------------------------------------------------------
-9.12 Blog Page Page
+9.8 Blog Page Page
 --------------------------------------------------------------*/
 
 .blog-search {
@@ -1738,7 +1827,7 @@ table .false-th {
 }
 
 /*--------------------------------------------------------------
-9.13 Blog Article Page
+9.9 Blog Article Page
 --------------------------------------------------------------*/
 
 .article-header-img {
@@ -1758,7 +1847,7 @@ table .false-th {
 
 #article-title h1 {
   font-size: 2.7rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #article-title a {
@@ -1769,6 +1858,69 @@ table .false-th {
 #article-title a:hover {
   color: #f79447;
   text-decoration: none;
+}
+
+.share-title {
+  text-align: center;
+}
+
+.share-buttons {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 60px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.share-buttons li {
+    height: auto;
+    flex: 0 1 auto;
+    width: 25%;
+}
+
+.share-buttons li:last-child {
+    width: 25%;
+    margin-right: 0;
+}
+
+.share-buttons a {
+    display: block;
+    padding: 12px 12px 9px;
+    text-align: center;
+    color: #fff;
+}
+
+.share-buttons li:first-child a {
+    border-radius: 3px 0 0 3px;
+}
+
+.share-buttons li:last-child a {
+    border-radius: 0 3px 3px 0;
+}
+
+.share-twitter	{
+    background: #1da1f2;
+}
+
+.share-facebook	{
+    background: #3b5998;
+}
+
+.share-googleplus	{
+    background: #db4437;
+}
+
+.share-linkedin	{
+    background: #0077b5;
 }
 
 .article-sign-off {
@@ -1843,7 +1995,6 @@ table .false-th {
 
 #leave-comment {
   padding-top: 20px;
-  /* border-top: solid 1px #eee; */
 }
 
 /* Specific WordPress Comment Styles */
@@ -1880,7 +2031,7 @@ p.logged-in-as {
 }
 
 /*--------------------------------------------------------------
-9.14 Contact Page
+9.10 Contact Page
 --------------------------------------------------------------*/
 
 #contact {
@@ -1897,7 +2048,7 @@ p.logged-in-as {
 }
 
 /*--------------------------------------------------------------
-9.15 Coming Soon Page
+9.11 Coming Soon Page
 --------------------------------------------------------------*/
 
 #coming-soon-page {
@@ -1954,7 +2105,7 @@ p.logged-in-as {
 }
 
 /*--------------------------------------------------------------
-9.16 404 Page
+9.12 404 Page
 --------------------------------------------------------------*/
 
 .error-full-page {
@@ -1979,16 +2130,39 @@ p.logged-in-as {
 }
 
 /*--------------------------------------------------------------
-9.17 Media Queries
+9.13 Login Page
 --------------------------------------------------------------*/
 
-/* Fix the top margin when logged in */
+#login {
+  padding: 213.22px 0 150px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 40px;
+  -webkit-box-shadow: 0px 0px 51px -5px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 51px -5px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 51px -5px rgba(0,0,0,0.15);
+}
+
+.login-title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+9.14 Media Queries
+--------------------------------------------------------------*/
+
+/* --- Fix the top margin when logged in --- */
 @media screen and (max-width: 782px) {
+
   .logged-in .fixed-top, .logged-in .fixed-top-second {
   	top: 46px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .logged-in .fixed-top, .logged-in .fixed-top-second {
   	top: 42px;
@@ -1997,9 +2171,11 @@ p.logged-in-as {
   	position: fixed!important;
   }
 }
-/* --- */
+/* ----------------------------------------- */
 
+/* Larger than the mobile nav breakpoint */
 @media only screen and (min-width: 992px) {
+  /* From 9.3 Navbar */
   .dropdown-menu {
     margin-top: 8px;
     display: block;
@@ -2009,6 +2185,7 @@ p.logged-in-as {
     transition:.5s ease all;
   }
 
+  /* From 9.3 Navbar */
   .dropdown-menu.show {
     display: block;
     visibility: visible;
@@ -2018,31 +2195,38 @@ p.logged-in-as {
   }
 }
 
+/* Smaller than the mobile nav breakpoint */
 @media only screen and (max-width: 991px) {
-  #hello {
-    text-align: center;
-  }
-
-  #hello h3 {
-    margin-top: 20px;
-  }
-
-  .dropdown-menu {
-    padding: 0;
-    margin: 0;
-  }
-  
+  /* From 9.6.1 Banner */
   .carousel-caption {
     right: 0;
     left: 0;
     min-width: 0;
   }
   
-  #service-plans .feature-instructions {
+  /* From 9.3 Navbar */
+  .dropdown-menu {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* From 9.6.3 Hello */
+  #hello {
+    text-align: center;
+  }
+  
+  /* From 9.6.3 Hello */
+  #hello h3 {
+    margin-top: 20px;
+  }
+  
+  /* From 9.7.1 Global Service Pages Styles */
+  .feature-instructions {
     display: none;
   }
   
-  #service-plans .feature-instructions-mobile {
+  /* From 9.7.1 Global Service Pages Styles */
+  feature-instructions-mobile {
     display: block;
     color: rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -2051,13 +2235,38 @@ p.logged-in-as {
     font-size: 1.1em;
   }
   
+  /* From 9.7.3 Graphic Design Page */
+  .signature-example {
+    margin-top: 20px;
+  }
+  
+  /* From 9.7.4 Managed Hosting Page */
+  .bp-plan {
+    margin-top: 100px;
+  }
+  
+  /* From 9.7.4 Managed Hosting Page */
+  #managed-key-features .feature-instructions {
+    display: none;
+  }
+  
+  /* From 9.7.4 Managed Hosting Page */
+  #managed-key-features .feature-instructions-mobile {
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+  }
+  
+  /* From 9.8 Blog Page */
   .custom-search-form input[type="search"] {
     width: 100%;
   }
   
+  /* From 9.8 Blog Page */
   .blog-search {
     width: 100%;
   }
   
 }
-

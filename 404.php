@@ -42,7 +42,14 @@
 			<div class="error-full-page">
 				<section class="error-page">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/404.svg"></img>
-					<a href="/" class="btn btn-primary">Go to Homepage</a>
+					<div class="container mt-5">
+						<div class="row">
+							<div class="col-lg-6 offset-lg-3">
+								<a href="/contact" class="btn btn-primary btn-block">Contact Us</a>
+								<a href="/" class="btn btn-secondary btn-block">Go to Home Page</a>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
 		</main><!-- #main -->

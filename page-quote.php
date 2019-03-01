@@ -16,7 +16,7 @@ get_header();
           <div class="col-md-6 offset-md-3">
             <h5></h5>
             <h1>Get a Quote</h1>
-            <h6>Interested in working with us? Tell us a little bit about what you need and we will get back to you with a quote.</h6>
+            <h6>Interested in working with us? Tell us a little bit about what you need so we can start to put a quote together for you.</h6>
           </div>
         </div>
       </div>

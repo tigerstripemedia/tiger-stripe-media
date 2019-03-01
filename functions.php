@@ -42,9 +42,14 @@ if ( ! function_exists( 'tiger_stripe_media_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
+		// This theme uses wp_nav_menu() in three locations.
 		register_nav_menus( array(
 			'primary' => __( 'Primary Menu', 'tiger-stripe-media' ),
+			'website-design' => __( 'Website Design Page', 'tiger-stripe-media' ),
+			'graphic-design' => __( 'Graphic Design Page', 'tiger-stripe-media' ),
+			'managed-hosting' => __( 'Managed Hosting Page', 'tiger-stripe-media' ),
+			'standard-hosting' => __( 'Standard Hosting Page', 'tiger-stripe-media' ),
+			'domains' => __( 'Domains Page', 'tiger-stripe-media' ),
 			'footer-one' => __( 'Footer Menu One', 'tiger-stripe-media' ),
 			'footer-two' => __( 'Footer Menu Two', 'tiger-stripe-media' ),
 		) );
@@ -345,3 +350,10 @@ function ds_w3tc_remove_adminbar() {
     }
 }
 add_action( 'admin_bar_menu','ds_w3tc_remove_adminbar',999);
+
+// Add ACF Options Pages
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page('Site Settings');
+
+}

@@ -6,54 +6,21 @@
 
 get_header();
 ?>
+  <script>
+    // array with texts to type in typewriter
+    var dataText = ["Build a strong online presence", "Take the stress out of website managment", "Connect with more customers", "We can help", "Tiger Stripe Media"];
+  </script>
 
-	<section id="banner">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        
-        <?php $loop = new WP_Query( array( 'post_type' => 'banners', 'orderby' => 'post_id', 'order' => 'ASC', 'posts_per_page' => -1 ) ); ?>
-        
-        <div class="carousel-inner carousel-overflow">
-          
-          <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-          
-          <?php
-           $banner_image  = get_field('banner_image');
-           $banner_title  = get_field('banner_title');
-           $banner_sub_title  = get_field('banner_sub_title');
-           $banner_class  = get_field('banner_class');
-           $banner_link  = get_field('banner_link');
-           $banner_new_tab  = get_field('banner_new_tab');
-          ?>
-          
-          <div class="carousel-item <?php echo $banner_class; ?>">
-            <?php if( !empty($banner_link) ) : ?>
-            <a href="<?php echo $banner_link; ?>" <?php if ($banner_new_tab) : ?>target="_blank"<?php endif; ?>>
-            <?php endif; ?>
-            <img class="d-block w-100 banner-image" src="<?php echo $banner_image; ?>" alt="<?php echo $banner_image['alt']; ?>">
-            <div class="container">
-              <div class="carousel-caption fade-up">
-                <h1><?php echo $banner_title; ?></h1>
-                <h5><?php echo $banner_sub_title; ?></h5>
-              </div>
-            </div>
-            <?php if( !empty($banner_link) ) : ?>
-            </a>
-            <?php endif; ?>
-          </div>
-          
-          <?php endwhile; ?>
-          
+  <section id="home-banner">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="home-jumbo-text">
+          <h1 class="new-typewriter display-4"></h1>
+          <h5 style="-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 17s both; animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 17s both;">We are a digital agency specicialising in website design, graphic design & web hosting.</h5>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
     <section id="hello">
       <div class="container">
@@ -65,11 +32,7 @@ get_header();
             <h3>Hayden Ingham <a class="icon-float hello-sm-icon" href="https://www.linkedin.com/in/hayden-ingham-b36085165/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
             <p class="text-muted">Owner of Tiger Stripe Media</p>
             <hr class="orange-hr">
-            <h4>Hi, I'm Hayden and I can help you
-              <a class="typewrite" data-period="2000" data-type='[ "develop a greater online presence.", "connect with more customers.", "use the internet to further your business." ]'>
-                <span class="wrap"></span>
-              </a>
-            </h4>
+            <p>Our mission is to develop and maintain an excellent online presence for hundreds of small businesses in Yorkshire.</p>
           </div>
         </div>
       </div>
@@ -77,37 +40,46 @@ get_header();
 
     <section id="services">
       <div class="container">
-        <h3>Services</h3>
+        <h6>what we do</h6>
+        <h2>Our Services</h2>
         <div class="row">
-          <div class="col-lg-3 col-md-4 col-6">
-            <a href="/websites" class="left-underline">
+          <div class="col-xl-2 offset-xl-1 col-lg-4 offset-lg-2 col-md-4 col-4">
+            <a href="/website-design">
               <div class="service-icon">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/websites.svg" alt="">
-                <h5>Websites</h5>
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/website-design.svg" alt="">
+                <h5 class="mt-3">Website Design</h5>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <a href="/design-print" class="left-underline">
+          <div class="col-xl-2 col-lg-4 col-md-4 col-4">
+            <a href="/graphic-design">
               <div class="service-icon">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/design-print.svg" alt="">
-                <h5>Design & Print</h5>
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/graphic-design.svg" alt="">
+                <h5 class="mt-3">Graphic Design</h5>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <a href="/portal/cart.php?gid=1" class="left-underline">
+          <div class="col-xl-2 col-lg-4 col-md-4 col-4">
+            <a href="/managed-hosting">
               <div class="service-icon">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/hosting.svg" alt="">
-                <h5>Web Hosting</h5>
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/managed-hosting.svg" alt="">
+                <h5 class="mt-3">Managed Web Hosting</h5>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <a href="/portal" class="left-underline">
+          <div class="col-xl-2 col-lg-4 offset-lg-0 col-md-4 offset-md-2 col-4 offset-2">
+            <a href="/standard-hosting">
+              <div class="service-icon">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/standard-hosting.svg" alt="">
+                <h5 class="mt-3">Standard Web Hosting</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-4 offset-md-0 col-4">
+            <a href="/domains">
               <div class="service-icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/domains.svg" alt="">
-                <h5>Domain Names</h5>
+                <h5 class="mt-3">Domain Names</h5>
               </div>
             </a>
           </div>
