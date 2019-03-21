@@ -75,5 +75,11 @@
 <!-- Custom JS -->
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 
+<script src="https://cdn.natterly.com/chatbox.js"></script>
+<script>
+  chatbox = new NatterlyChatbox("fafee190-f6f5-4329-864d-38291d98fbf3");
+  chatbox.render();
+</script>
+
 </body>
 </html>

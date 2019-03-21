@@ -163,6 +163,21 @@ $faq_desc  = get_field('faq_desc');
           </div>
       
       	  <?php endwhile; wp_reset_postdata(); ?>
+      	  
+      	  <div class="card">
+          
+            <a data-toggle="collapse" data-target="#otherQuestion" aria-expanded="false" aria-controls="otherQuestion">
+              <div class="card-header" id="faqQuestion"><h5><i class="fas fa-question-circle"></i> My question isn't answered here, what shall I do?</h5></div>
+            </a>
+        
+            <div id="otherQuestion" class="collapse" aria-labelledby="faqQuestion" data-parent="#faqAccordion">
+              <div class="card-body">
+                If you have a question about <?php echo $faq_desc; ?> that is not answered here please contact us below.
+                <a href="/contact" class="btn btn-primary btn-block mt-2">Contact Us</a>
+              </div>
+            </div>
+            
+          </div>
         
         </div>
       </div>
