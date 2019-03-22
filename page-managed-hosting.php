@@ -17,7 +17,7 @@ $managed_platform_title  = get_field('managed_platform_title');
 $managed_platform_sub_title  = get_field('managed_platform_sub_title');
 $managed_platform_copy  = get_field('managed_platform_copy');
 $free_switch_svg  = get_field('free_switch_svg');
-$free_switch_title  = get_field('managed_platform_title');
+$free_switch_title  = get_field('free_switch_title');
 $free_switch_sub_title  = get_field('free_switch_sub_title');
 $free_switch_copy  = get_field('free_switch_copy');
 
