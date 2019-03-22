@@ -64,7 +64,7 @@ $(".navbar-second").find("a").click(function(e) {
     }, 2000);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+if(document.getElementById("second-nav")!=null){
   // Fix second nav top on scroll
   window.onscroll = function fixedScroll() {secNavScroll()};
   
@@ -78,4 +78,4 @@ document.addEventListener('DOMContentLoaded', function() {
       header.classList.remove("fixed-top-second");
     }
   }
-})
+}
