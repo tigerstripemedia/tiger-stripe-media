@@ -19,8 +19,10 @@ get_header();
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="home-jumbo-text">
-          <h1 id="typewriter" class="new-typewriter display-4"></h1>
-          <h5 style="-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) <?php echo $tagline_delay_seconds; ?>s both; animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) <?php echo $tagline_delay_seconds; ?>s both;"><?php echo $banner_tagline; ?></h5>
+          <h2 style="-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both; animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;">Welcome to Tiger Stripe Media</h2>
+          <h1 style="-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.1s both; animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.7s both;" class="display-4">Let us help <span class="colour-1">your business</span> thrive online</h1>
+          <h5 style="-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both; animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;"><?php echo $banner_tagline; ?></h5>
+          <a href="/contact" class="btn btn-secondary btn-lg mt-3">Get in Touch</a>
         </div>
       </div>
     </div>

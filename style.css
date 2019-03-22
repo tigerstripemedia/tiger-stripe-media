@@ -434,6 +434,10 @@ a {
     border-bottom: 0.5px solid #f79447;
 }
 
+.colour-1 {
+  color: #f79447;
+}
+
 .form-control {
    border-radius: 3px;
 }
@@ -921,16 +925,14 @@ table .false-td {
   background: url('/wp-content/themes/tiger-stripe-media/assets/img/background-1.svg') no-repeat;
   background-size: cover;
   margin: 0;
-  padding: 213.22px 0 150px 0;
+  padding: 193.22px 0 130px 0;
   text-align: center;
 }
 
-#home-banner .jumbotron h1 {
-  color: #fff;
-}
-
+#home-banner .jumbotron h1,
+#home-banner .jumbotron h2,
 #home-banner .jumbotron h5 {
-  color: #f79447;
+  color: #fff;
 }
 
 @-webkit-keyframes fade-in {
